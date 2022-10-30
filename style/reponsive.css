@@ -2,4 +2,8 @@
     .info-account{
         display: none;
     }
+    .header .nav-item a::after{
+        margin-left: 0;
+        border: 0px;
+    }
 }

@@ -5,6 +5,7 @@
     --flex: flex;
     --list: none;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --position-form: rgb(173, 251, 255);
 }
 *{
     margin:0px;
@@ -36,8 +37,16 @@
 .header .icons-search{
     font-size: 16px;
 }
+.header .nav-item a::after{
+    content: "";
+    border: 0.5px solid black;
+    margin-left: 15px;
+}
 
-
+.info{
+    border: 1px solid black;
+    position: relative;
+}
 .info-account{
     box-shadow: 5px 2px 5px 2px;
     display: inline-block;
@@ -47,18 +56,18 @@
     right: 0;
     text-align: center;
     border: 1px solid black;
+    border-radius: 4px;
 }
 .info-account a{
     text-decoration: none;
 }
-/* .info-account_top:hover,
-.info-account_bot:hover{
-    background-color: aqua;
-} */
+.info-account_top{
+    border-bottom: 1px solid black;
+}
 .info-account_top:hover,
 .info-account_bot:hover{
-    transition: all 1s ease-in-out;
-    background-color: aquamarine;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--position-form);
 }
 .info-account_top:hover .position-login,
 .info-account_bot:hover .position-sign-in{
@@ -70,12 +79,11 @@
     top: 42%;
     width: 200px;
     color: red;
-    background-color: aquamarine;
+    background-color:var(--position-form);
     padding: 2px;
     text-align: center;
     border-radius: 7px;
     box-shadow: 0px 2px 1px 0px;
-    transition: all 1s ease-in-out;
     display: none;
 }
 .position-login::before{
@@ -83,7 +91,7 @@
     position: absolute;
     right: -7px;
     bottom: 7px;
-    background-color: aquamarine;
+    background-color: var(--position-form);
     width: 15px;
     height: 15px;
     transform: rotate(45deg);
@@ -92,10 +100,10 @@
 .position-sign-in{
     position: fixed;
     right: 5%;
-    top: 51%;
+    top: 50%;
     width: 200px;
     color: blueviolet;
-    background-color: aquamarine;
+    background-color: var(--position-form);
     padding: 2px;
     text-align: center;
     border-radius: 7px;
@@ -107,7 +115,7 @@
     position: absolute;
     right: -7px;
     bottom: 7px;
-    background-color: aquamarine;
+    background-color: var(--position-form);
     width: 15px;
     height: 15px;
     transform: rotate(45deg);
