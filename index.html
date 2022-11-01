@@ -1,127 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/reponsive.css" />
+    <!-- Link CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Link Icon Web -->
+    <link rel="icon" href="./images/logo.png" />
+    <title>STU Light Novel</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link CSS -->
-  <link rel="stylesheet" href="./style/style.css">
-  <link rel="stylesheet" href="./style/reponsive.css">
-  <!-- Link CSS Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <!-- Link Icon Web -->
-  <link rel="icon" href="./images/logo.png">
-  <title>STU Light Novel</title>
-</head>
+  <body>
+    <div class="container-padding container-fluid">
+      <!-- Header -->
+      <header class="header">
+        <!-- boostrap -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo.png" width="60px" height="50px" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Giới Thiệu</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Thành Tựu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Danh Mục</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Sản Phẩm Nước Ngoài</a
+                  >
+                </li>
+              </ul>
+              <form class="search d-flex" role="search">
+                <input
+                  class="search-input form-control me-2"
+                  type="search"
+                  placeholder="Tìm Light Novel "
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  <img src="./images/search.png" width="25px" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <!-- end bootstrap -->
+      </header>
+      <!-- end header -->
 
-<body>
-  <div class="container-padding container-fluid">
-    <!-- Header -->
-    <header class="header">
-      <!-- boostrap -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img src="./images/logo.png" width="60px" height="50px">
+      <!-- position form -->
+      <div class="info-account">
+        <div class="info-account_top" title="Đăng Nhập">
+          <a href="./login.html">
+            <img src="./images/login.ico" width="50px" /><br />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Trang Chủ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Giới Thiệu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Thành Tựu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Danh Mục</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Sản Phẩm Nước Ngoài</a>
-              </li>
-            </ul>
-            <form class="search d-flex" role="search">
-              <input class="search-input form-control me-2" type="search" placeholder="Tìm Light Novel "
-                aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">
-                <img src="./images/search.png" width="25px">
-              </button>
-            </form>
+          <div class="position-login">
+            <span>Đăng nhập để mua sắm</span>
           </div>
         </div>
-      </nav>
-      <!-- end bootstrap -->
-    </header>
-    <!-- end header -->
+        <div class="info-account_bot" title="Đăng Ký">
+          <a href="./sign-up.html">
+            <img
+              src="./images/dangky-icon.png"
+              width="50px"
+              height="50px"
+            /><br />
+          </a>
+          <div class="position-sign-in">
+            <span>Đăng ký để nhận ưu đãi</span>
+          </div>
+        </div>
+      </div>
+      <!-- end position form -->
 
-    <!-- position form -->
-    <div class="info-account">
-      <div class="info-account_top" title="Đăng Nhập">
-        <a href="./login.html">
-          <img src="./images/login.ico" width="50px"><br>
-        </a>
-        <div class="position-login">
-          <span>Đăng nhập để mua sắm</span>
+      <!-- banner -->
+      <div class="banner m-3">
+        <div
+          id="carouselBannerControl"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="#">
+                <img
+                  src="./images/banner1.jpg"
+                  class="d-block w-100"
+                  alt="Khuyến Mãi"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <img
+                  src="./images/banner2.jpg"
+                  class="d-block w-100"
+                  alt="Khuyến Mãi"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <img
+                  src="./images/banner3.jpg"
+                  class="d-block w-100"
+                  alt="Khuyến Mãi"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <img
+                  src="./images/banner4.jpg"
+                  class="d-block w-100"
+                  alt="Khuyến Mãi"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <img
+                  src="./images/banner5.jpg"
+                  class="d-block w-100"
+                  alt="Khuyến Mãi"
+                />
+              </a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselBannerControl"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselBannerControl"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-      <div class="info-account_bot" title="Đăng Ký">
-        <a href="./sign-up.html">
-          <img src="./images/dangky-icon.png" width="50px" height="50px"><br>
-        </a>
-        <div class="position-sign-in">
-          <span>Đăng ký để nhận ưu đãi</span>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-left">
+          <div class="footer-left_content">
+            <a href="#">
+              <img src="./images/logo.png" alt="" />
+            </a>
+            <br /><br />
+            <h5>TP.HCM:</h5>
+            <span
+              >Chi Nhánh 1: 35 Trần Trọng Phát, phường 20, quận 15, TP.HCM</span
+            ><br />
+            <span
+              >Chi Nhánh 2: 34 Biện Hồng Phát, phường 11, quận 14, TP.HCM</span
+            >
+            <h5>Hà Nội:</h5>
+            <span>Chi Nhánh 3: 180 Cao Sơn Bá, Quận Đống Cát, Hà Nội</span
+            ><br />
+            <span class="copyright">&#169; Bản quyền thuộc về Crodic</span>
+          </div>
         </div>
-      </div>
+        <div class="footer-right"></div>
+      </footer>
     </div>
-    <!-- end position form -->
 
-    <!-- banner -->
-    <div class="banner">
-      <div class="banner-left">
-
-      </div>
-
-      <div class="banner-right">
-        <div class="banner-right_top">
-
-        </div>
-        <div class="banner-right-bot">
-
-        </div>
-      </div>
-    </div>
-
-    <!-- footer -->
-    <footer class="footer">
-
-    </footer>
-  </div>
-
-
-
-
-
-
-
-
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
