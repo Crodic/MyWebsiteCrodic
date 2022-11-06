@@ -7,6 +7,13 @@
         margin-left: 0;
         border: 0px;
     }
+    .footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .header .nav-pc_none{
+        display: block;
+    }
 }
 /* Tablet device */
 @media screen and (max-width: 1240px){
