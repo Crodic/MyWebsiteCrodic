@@ -3,7 +3,7 @@
     .info-account{
         display: none;
     }
-    .header .nav-item a::after{
+    .header .nav-item .nav-link::after{
         margin-left: 0;
         border: 0px;
     }
@@ -14,11 +14,20 @@
     .header .nav-pc_none{
         display: block;
     }
+    .product{
+        display: block;
+    }
+    .contact{
+        display: none;
+    }
 }
 /* Tablet device */
 @media screen and (max-width: 1240px){
     .header .nav-item a::after{
         margin-left: 0;
         border: 0px;
+    }
+    .contact{
+        display: none;
     }
 }
