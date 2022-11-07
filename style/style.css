@@ -13,7 +13,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: var(--font-family);
-    /* font-weight: 500; */ 
+    /* font-weight: 500; */
 }
 html{
     scroll-behavior: smooth;
@@ -189,6 +189,12 @@ body{
     border-radius: 10px;
     margin: 5px;
     position: relative;
+}
+.card-position span{
+    transition: all 0.5s ease-in-out;
+}
+.product-items:hover .card-position span{
+    color: rgb(255, 247, 5) !important;
 }
 .product-items .card-position{
     margin-top: 10px;
