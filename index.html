@@ -18,6 +18,7 @@
 </head>
 
 <body>
+  <!-- container -->
   <div class="container-padding container-fluid">
     <!-- Header -->
     <header class="header">
@@ -143,6 +144,7 @@
         </button>
       </div>
     </div>
+    <!-- end banner -->
 
     <!-- about -->
     <div id="about" class="about m-3">
@@ -163,13 +165,13 @@
           </a>
         </div>
         <div class="col-12 col-sm-4 image-center">
-            <img src="./images/logo.png">
+          <img src="./images/logo.png">
         </div>
       </div>
     </div>
     <!-- end about -->
 
-    <!-- product -->
+    <!-- product 1 -->
     <div id="product-1" class="container-product m-3">
       <div class="header-product">
         <h4 class="text-center p-1" style="color: red;">
@@ -261,7 +263,8 @@
         </div>
       </div>
     </div>
-    <!-- end product -->
+    <!-- end product 1 -->
+
     <!-- product 2 -->
     <div id="product-2" class="container-product m-3">
       <div class="header-product">
@@ -352,8 +355,9 @@
       </div>
     </div>
     <!-- end product 2 -->
+
     <!-- product 3 -->
-    <div id="product-3" class="container-product m-3" >
+    <div id="product-3" class="container-product m-3">
       <div class="header-product text-center">
         <h5 class="header-color text-center p-1">
           <i class="fa-solid fa-earth-americas"></i>
@@ -370,9 +374,11 @@
             <button class="nav-link" id="nav-jp-tab" data-bs-toggle="tab" data-bs-target="#nav-jp" type="button"
               role="tab" aria-controls="nav-jp" aria-selected="false">Nhật Bản</button>
             <button class="nav-link" id="nav-ln-tab" data-bs-toggle="tab" data-bs-target="#nav-ln" type="button"
-              role="tab" aria-controls="nav-ln" aria-selected="false" title="Những sản phẩm chuẩn nguyên tác không qua dịch thuật">Light Novel Nguyên Tác</button>
+              role="tab" aria-controls="nav-ln" aria-selected="false"
+              title="Những sản phẩm chuẩn nguyên tác không qua dịch thuật">Light Novel Nguyên Tác</button>
             <button class="nav-link" id="nav-cs-tab" data-bs-toggle="tab" data-bs-target="#nav-cs" type="button"
-              role="tab" aria-controls="nav-cs" aria-selected="false" title="Những sản phẩm chuẩn nguyên tác không qua dịch thuật">Đặt trước</button>
+              role="tab" aria-controls="nav-cs" aria-selected="false"
+              title="Những sản phẩm chuẩn nguyên tác không qua dịch thuật">Đặt trước</button>
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
@@ -792,89 +798,93 @@
       </div>
     </div>
     <!-- end product 3 -->
-  </div>
-  <!-- contact -->
-  <div class="contact">
-    <div class="contact-left">
-      <h4 style="color: red;">
-        <i class="fa-sharp fa-solid fa-envelope"></i>
-        <span>Đăng Ký Để Nhận Thông Báo Sản Phẩm Qua Email</span>
-      </h4>
-    </div>
-    <div class="contact-right">
-      <form>
-        <input type="text" placeholder="Nhập địa chỉ email của bạn" autocomplete="email" id="email">
-        <input class="input-submit" type="submit" id="btn-email" onclick="checkEmail()">
-      </form>
-    </div>
-  </div>
-  <!-- end contact -->
-  <!-- footer -->
-  <footer class="footer">
-    <div class="footer-left">
-      <div class="footer-left_content">
-        <a href="#">
-          <img src="./images/logo.png" alt="" />
-        </a>
-        <br /><br />
-        <h6>TP.HCM:</h6>
-        <span>Chi Nhánh 1: 34 Trần Trọng Phát, phường 20, quận 15, TP.HCM</span><br />
-        <span>Chi Nhánh 2: 33 Biện Hồng Phát, phường 11, quận 14, TP.HCM</span>
-        <h6>Hà Nội:</h6>
-        <span>Chi Nhánh 3: 180 Cao Sơn Bá, Quận Đống Cát, Hà Nội</span><br />
-        <span class="copyright">&#169; Bản quyền thuộc về Crodic</span>
+
+    <!-- contact -->
+    <div class="contact">
+      <div class="contact-left">
+        <h4 style="color: red;">
+          <i class="fa-sharp fa-solid fa-envelope"></i>
+          <span>Đăng Ký Để Nhận Thông Báo Sản Phẩm Qua Email</span>
+        </h4>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" placeholder="Nhập địa chỉ email của bạn" autocomplete="email" id="email">
+          <input class="input-submit" type="submit" id="btn-email" onclick="checkEmail()">
+        </form>
       </div>
     </div>
-    <div class="footer-right">
-      <div class="footer-right_top">
-        <span> Thông tin liên lạc: </span><br>
-        <i class="fa-solid fa-phone"></i>
-        <span>Tư Vấn miễn phí ngay: <b>1800. 8088</b> Bấm phím 1 (cước phí 1000đ/1 phút)</span><br>
-        <i class="fa-solid fa-envelope"></i>
-        <span>Tư Vấn qua email: <b>bienphat01422@gmail.com</b> (Trả lời trong vòng vài giờ)</span>
-        <hr>
-      </div>
-      <div class="footer-right_bot">
-        <div class="bot-flex_1">
-          <ul>
-            <li>
-              <h6>Các Trang Mạng Xã Hội Liên Kết: </h6>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-facebook" style="font-size: 50px; color: blue; vertical-align: middle;"></i>
-                <span class="color-hover">Crodic Crystal</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-tiktok" style="font-size: 50px; color: black; vertical-align: middle;"></i>
-                <span class="color-hover">Phát Trần Trọng</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-youtube" style="font-size: 50px; color:red; vertical-align: middle;"></i>
-                <span class="color-hover">LIGHT NOVEL</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="bot-flex_2">
-          <ul>
-            <li>
-              <h6>Danh Mục Công Ty</h6>
-            </li>
-            <li><a href="#">Chính sách đổi trả hàng.</a></li>
-            <li><a href="#">Phí Vận Chuyển từng khu vực</a></li>
-            <li><a href="#">Quản Lý Đơn Hàng</a></li>
-            <li><a href="#">Chính sách huỷ đơn hàng</a></li>
-          </ul>
+    <!-- end contact -->
+  
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <div class="footer-left_content">
+          <a href="#">
+            <img src="./images/logo.png" alt="" />
+          </a>
+          <br /><br />
+          <h6>TP.HCM:</h6>
+          <span>Chi Nhánh 1: 34 Trần Trọng Phát, phường 20, quận 15, TP.HCM</span><br />
+          <span>Chi Nhánh 2: 33 Biện Hồng Phát, phường 11, quận 14, TP.HCM</span>
+          <h6>Hà Nội:</h6>
+          <span>Chi Nhánh 3: 180 Cao Sơn Bá, Quận Đống Cát, Hà Nội</span><br />
+          <span class="copyright">&#169; Bản quyền thuộc về Crodic</span>
         </div>
       </div>
-    </div>
-  </footer>
+      <div class="footer-right">
+        <div class="footer-right_top">
+          <span> Thông tin liên lạc: </span><br>
+          <i class="fa-solid fa-phone"></i>
+          <span>Tư Vấn miễn phí ngay: <b>1800. 8088</b> Bấm phím 1 (cước phí 1000đ/1 phút)</span><br>
+          <i class="fa-solid fa-envelope"></i>
+          <span>Tư Vấn qua email: <b>bienphat01422@gmail.com</b> (Trả lời trong vòng vài giờ)</span>
+          <hr>
+        </div>
+        <div class="footer-right_bot">
+          <div class="bot-flex_1">
+            <ul>
+              <li>
+                <h6>Các Trang Mạng Xã Hội Liên Kết: </h6>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-facebook" style="font-size: 50px; color: blue; vertical-align: middle;"></i>
+                  <span class="color-hover">Crodic Crystal</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-tiktok" style="font-size: 50px; color: black; vertical-align: middle;"></i>
+                  <span class="color-hover">Phát Trần Trọng</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-youtube" style="font-size: 50px; color:red; vertical-align: middle;"></i>
+                  <span class="color-hover">LIGHT NOVEL</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="bot-flex_2">
+            <ul>
+              <li>
+                <h6>Danh Mục Công Ty</h6>
+              </li>
+              <li><a href="#">Chính sách đổi trả hàng.</a></li>
+              <li><a href="#">Phí Vận Chuyển từng khu vực</a></li>
+              <li><a href="#">Quản Lý Đơn Hàng</a></li>
+              <li><a href="#">Chính sách huỷ đơn hàng</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
   </div>
+<!-- end container -->
 
   <!-- Bootstrap JS -->
   <script src="./javascript/script.js"></script>
