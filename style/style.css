@@ -166,6 +166,19 @@ body{
 .carousel-item{
     transition: all 1s ease-in-out !important;
 }
+
+/* about */
+.about{
+    box-sizing: border-box;
+    background-color: azure;
+    padding: 20px;
+    border-radius: 10px;
+}
+.about .row .image-center{
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
 /* product */
 .product{
     box-sizing: border-box;
