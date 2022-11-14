@@ -56,8 +56,8 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#product-2">Manga/Anime</a></li>
-                  <li><a class="dropdown-item" href="#nav-china-tab">Ngôn Tình</a></li>
-                  <li><a class="dropdown-item" href="#nav-cs-tab">Tâm Lý</a></li>
+                  <li><a class="dropdown-item" href="#nav-china-tab">Giỏ Hàng</a></li>
+                  <li><a class="dropdown-item" href="#nav-cs-tab">Kho Mã Giảm Giá</a></li>
                 </ul>
               </li>
               <li class="nav-pc_none nav-item">
@@ -85,70 +85,160 @@
     <div class="info-account">
       <div class="info-account_top" title="Đăng Nhập">
         <a href="./login.html">
-          <img src="./images/login.ico" width="50px" /><br />
+          <i class="fa-sharp fa-solid fa-user-secret" style="font-size: 40px; padding: 5px; color: black;"></i> <br />
         </a>
         <div class="position-login">
-          <span>Đăng nhập để mua sắm</span>
+          <span>Crodic Crystal</span><br>
+          <span>Ví: 1.000.000đ</span>
         </div>
       </div>
       <div class="info-account_bot" title="Đăng Ký">
         <a href="./sign-up.html">
-          <img src="./images/dangky-icon.png" width="50px" height="50px" /><br />
+          <i class="fa-solid fa-cart-shopping" style="font-size: 35px; padding: 5px; color: aqua;"></i><br />
         </a>
         <div class="position-sign-in">
-          <span>Đăng ký để nhận ưu đãi</span>
+          <span>Giỏ đồ hiện tại đang rỗng</span>
+          <span>Sản Phẩm: 0</span>
         </div>
       </div>
     </div>
     <!-- end position form -->
-
-    <!-- banner -->
-    <div class="banner mx-3">
-      <div id="carouselBannerControl" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="#">
-              <img src="./images/banner1.jpg" class="d-block w-100" alt="Khuyến Mãi" />
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#">
-              <img src="./images/banner2.jpg" class="d-block w-100" alt="Khuyến Mãi" />
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#">
-              <img src="./images/banner3.jpg" class="d-block w-100" alt="Khuyến Mãi" />
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#">
-              <img src="./images/banner4.jpg" class="d-block w-100" alt="Khuyến Mãi" />
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#">
-              <img src="./images/Banner5.jpg" class="d-block w-100" alt="Khuyến Mãi" />
-            </a>
-          </div>
+    <!-- content -->
+    <div class="content-product_items mx-5">
+      <div class="product-image_info">
+        <img src="./images/product-cn-1.jpg" width="100%">
+      </div>
+      <div class="product-content_info">
+        <h4>Hướng dẫn học và thi YTC (Cấp độ 1)</h4>
+        <span>Nhà cung cấp: <a href="https://www.stu.edu.vn">STU</a></span><br>
+        <span>Nhà Xuất Bản: <a href="https://www.facebook.com/bienphat0904">Crodic</a></span><br><br>
+        <span>Đánh giá:
+          <i class="fa-solid fa-star" style="color: yellow;"></i>
+          <i class="fa-solid fa-star" style="color: yellow;"></i>
+        </span><br><br>
+        <span class="price" style="color: red;">125.000đ &nbsp;&nbsp;&nbsp;&nbsp; <del style="color: rgb(157, 45, 45);">200.000đ</del></span><br><br>
+        <span>Chính Sách Đổi trả: Đổi trả sản phẩm trong vòng 30 ngày <a href="#">Xem thêm</a></span><br><br>
+        <form action="get">
+          <label for="number">Số Lượng</label>
+          <input type="number" name="number" id="number" value="1" min="1" max="100"
+            style="padding-left: 10px;"><br><br>
+          <input type="button" value="Thêm Vào Giỏ Hàng" class="btn mx-2">
+          <input type="submit" value="Mua Ngay" class="btn">
+        </form>
+      </div>
+      <div class="product-sale_info">
+        <div class="code">
+          <form action="get">
+            <label for="code">Mã Giảm Giá:</label><br>
+            <input type="text" placeholder="Nhập mã giãm giá." name="code" id="code" class="code-input">
+            <input type="submit" value="Nhập" class="btn-code">
+            <p>Số mã giảm giá hiện có: 1</p>
+          </form>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannerControl"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselBannerControl"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="code-info">
+          <p>Mã Giảm Giá của SHOP: STULIGHTNOVELNEWBIE</p>
+          <p>Mã Giảm Giá của Chi Nhánh: STULIGHTNOVELPRODUCT</p>
+          <p>Mã Giảm Giá trong tháng: STULIGHTNOVELSALE</p>
+          <p>Mã Giảm Giá cho khách hàng: STULIGHTNOVELNOVEMBER</p>
+        </div>
       </div>
     </div>
-    <!-- end banner -->
-    <div class="content-login m-3">
-
+    <!-- product recommend -->
+    <div id="product-1" class="container-product m-3">
+      <div class="header-product">
+        <h4 class="text-center p-1" style="color: red;">
+          <i class="fa-brands fa-hotjar"></i>
+          Có thể bạn sẽ thích
+          <i class="fa-brands fa-hotjar"></i>
+        </h4>
+        <div class="product m-3">
+          <div class="product-items">
+            <div class="card-position">
+              <span>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+              </span>
+            </div>
+            <div class="card-top">
+              <img src="./images/product_type1_1.jpg" width="70%">
+            </div>
+            <div class="card-bot">
+              <h5>Tinh Thần Bền Bỉ</h5>
+              <span>Rèn luyện 1 tinh thần thép ngay....</span><br>
+              <span class="price-items">197.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>250.000đ</del><br>
+              <button class="btn">Mua Ngay</button>
+            </div>
+          </div>
+          <div class="product-items">
+            <div class="card-position">
+              <span>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+              </span>
+            </div>
+            <div class="card-top">
+              <a href="./product-items.html">
+                <img src="./images/product_type1_2.jpg" width="70%">
+              </a>
+            </div>
+            <div class="card-bot">
+              <h5>Hiệu ứng Lucifer</h5>
+              <span>Rất nhiều điều thú vị đang chờ bạn.</span><br>
+              <span class="price-items">423.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>500.000đ</del><br>
+              <button class="btn">Mua Ngay</button>
+            </div>
+          </div>
+          <div class="product-items">
+            <div class="card-position">
+              <span>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+              </span>
+            </div>
+            <div class="card-top">
+              <img src="./images/product_type1_3.jpg" width="70%">
+            </div>
+            <div class="card-bot">
+              <h5>Tâm Lý Học Tính Cách</h5>
+              <span>Tìm hiểu rõ nét nhất về tâm lý....</span><br>
+              <span class="price-items">291.999đ</span><br>
+              <button class="btn">Mua Ngay</button>
+            </div>
+          </div>
+          <div class="product-items">
+            <div class="card-position">
+              <span>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+              </span>
+            </div>
+            <div class="card-top">
+              <img src="./images/product_type1_4.jpg" width="70%">
+            </div>
+            <div class="card-bot">
+              <h5>Toàn Thư Tâm Lý Học</h5>
+              <span>Tâm lý luôn là thứ khó kiểm soát nhất</span><br>
+              <span class="price-items">59.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp;<del>100.000đ</del><br>
+              <button class="btn">Mua Ngay</button>
+            </div>
+          </div>
+        </div>
+        <div class="next-product text-center m-1">
+          <a href="#">Xem Thêm ></a>
+        </div>
+      </div>
     </div>
-  
+    <!-- end product recommend  -->
+    <!-- end content  -->
     <!-- footer -->
     <footer class="footer">
       <div class="footer-left">
@@ -217,7 +307,7 @@
     <!-- end footer -->
 
   </div>
-<!-- end container -->
+  <!-- end container -->
 
   <!-- Bootstrap JS -->
   <script src="./javascript/script.js"></script>

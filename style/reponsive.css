@@ -20,6 +20,19 @@
     .contact{
         display: none;
     }
+    .content-product_items{
+        display: block;
+    }
+    .product-image_info img{
+        margin-top:20px;
+    }
+    .btn{
+        display: inline-block;
+        font-size: 14px !important;
+    }
+    .product-sale_info{
+        display: none;
+    }
 }
 /* Tablet device */
 @media screen and (max-width: 1240px){
@@ -28,6 +41,19 @@
         border: 0px;
     }
     .contact{
+        display: none;
+    }
+    .header .nav-item .nav-link::after{
+        margin-left: 0;
+        border: 0px;
+    }
+    .product-image_info{
+        flex: 1 1 40%;
+    }
+    .product-content_info{
+        flex: 1 1 60%;
+    }
+    .product-sale_info{
         display: none;
     }
 }
