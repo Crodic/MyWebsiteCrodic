@@ -104,9 +104,13 @@
     </div>
     <!-- end position form -->
     <!-- content -->
-    <div class="content-product_items mx-5">
+    <div class="content-product_items mx-3">
       <div class="product-image_info">
         <img src="./images/product-cn-1.jpg" width="100%">
+        <p style="font-size: 12px; margin-top: 10px;">Con bạn sẽ không bao giờ thi trượt nữa vì giờ đây YTC đã cung cấp cho bạn đầy đủ kiến thức mà bạn có để
+          chinh phục các kỳ thi từ thấp đến cao, giúp con bạn có những kiến thức để tham gia các kỳ thi. Nhanh tay sắm ngay 1 cuốn cho con
+          bạn nào
+        </p>
       </div>
       <div class="product-content_info">
         <h4>Hướng dẫn học và thi YTC (Cấp độ 1)</h4>
@@ -116,23 +120,24 @@
           <i class="fa-solid fa-star" style="color: yellow;"></i>
           <i class="fa-solid fa-star" style="color: yellow;"></i>
         </span><br><br>
-        <span class="price" style="color: red;">125.000đ &nbsp;&nbsp;&nbsp;&nbsp; <del style="color: rgb(157, 45, 45);">200.000đ</del></span><br><br>
-        <span>Chính Sách Đổi trả: Đổi trả sản phẩm trong vòng 30 ngày <a href="#">Xem thêm</a></span><br><br>
+        <span class="price" style="color: red; font-size: 25px;">125.000đ &nbsp;&nbsp; <del style="color: rgb(157, 45, 45);">200.000đ</del></span><br><br>
+        <span>Chính Sách Đổi trả: <br> Đổi trả sản phẩm trong vòng 30 ngày <a href="#">Xem thêm</a></span><br><br>
         <form action="get">
           <label for="number">Số Lượng</label>
           <input type="number" name="number" id="number" value="1" min="1" max="100"
             style="padding-left: 10px;"><br><br>
-          <input type="button" value="Thêm Vào Giỏ Hàng" class="btn mx-2">
-          <input type="submit" value="Mua Ngay" class="btn">
+          <input type="button" class="btn m-1 display-none" value="Giỏ Hàng" >
+          <button type="button" class="btn display-none" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          data-bs-whatever="@mdo">Mua Ngay</button>
         </form>
       </div>
       <div class="product-sale_info">
         <div class="code">
-          <form action="get">
+          <form action="">
             <label for="code">Mã Giảm Giá:</label><br>
             <input type="text" placeholder="Nhập mã giãm giá." name="code" id="code" class="code-input">
             <input type="submit" value="Nhập" class="btn-code">
-            <p>Số mã giảm giá hiện có: 1</p>
+            <p id="info-code_sale">Số mã giảm giá hiện có: 1</p>
           </form>
         </div>
         <div class="code-info">
@@ -143,6 +148,50 @@
         </div>
       </div>
     </div>
+    <!-- end content  -->
+    <!-- modal  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-color">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Tin Khách Hàng</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Họ và Tên.">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="phone" placeholder="Số điện thoại">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="email-order" placeholder="Email">
+              </div>
+              <div class="mb-3 text-left">
+                <h5>Đơn vị giao hàng (bạn mong muốn)</h5>
+                <p style="font-size: 12px; color:red;">Chúng tôi sẽ bàn giao cho 1 trong các đơn vị mà bạn đã chọn</p>
+                <input type="checkbox" id="list-check-1" name="check" class="m-2" checked>
+                <label for="list-check-1">GHN</label>
+                <input type="checkbox" id="list-check-2" name="check" class="m-2">
+                <label for="list-check-2">NinjaVan</label>
+                <input type="checkbox" id="list-check-3" name="check" class="m-2">
+                <label for="list-check-3">GHTK</label>
+              </div>
+              <div class="mb-3 text-left">
+                <h5>Yêu cầu cho shipper</h5>
+                <textarea name="wish" id="wish" cols="50" rows="5"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">Đóng</button>
+            <button type="submit" class="btn" onclick="submitOrder()">Đặt Hàng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal  -->
     <!-- product recommend -->
     <div id="product-1" class="container-product m-3">
       <div class="header-product">
@@ -163,7 +212,9 @@
               </span>
             </div>
             <div class="card-top">
-              <img src="./images/product_type1_1.jpg" width="70%">
+              <a href="./product-items.html">
+                <img src="./images/product_type1_1.jpg" width="70%">
+              </a>
             </div>
             <div class="card-bot">
               <h5>Tinh Thần Bền Bỉ</h5>
@@ -183,6 +234,8 @@
             </div>
             <div class="card-top">
               <a href="./product-items.html">
+                <a href="./product-items.html">
+              </a>
                 <img src="./images/product_type1_2.jpg" width="70%">
               </a>
             </div>
@@ -204,7 +257,9 @@
               </span>
             </div>
             <div class="card-top">
-              <img src="./images/product_type1_3.jpg" width="70%">
+              <a href="./product-items.html">
+                <img src="./images/product_type1_3.jpg" width="70%">
+              </a>
             </div>
             <div class="card-bot">
               <h5>Tâm Lý Học Tính Cách</h5>
@@ -222,7 +277,9 @@
               </span>
             </div>
             <div class="card-top">
-              <img src="./images/product_type1_4.jpg" width="70%">
+              <a href="./product-items.html">
+                <img src="./images/product_type1_4.jpg" width="70%">
+              </a>
             </div>
             <div class="card-bot">
               <h5>Toàn Thư Tâm Lý Học</h5>
@@ -240,6 +297,11 @@
     <!-- end product recommend  -->
     <!-- end content  -->
     <!-- footer -->
+    <div class="position-price">
+      <input type="button" value="Giỏ Hàng" class="btn border">
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+      data-bs-whatever="@mdo">Mua Ngay</button>
+    </div>
     <footer class="footer">
       <div class="footer-left">
         <div class="footer-left_content">

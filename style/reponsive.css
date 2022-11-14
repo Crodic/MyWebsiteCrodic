@@ -33,6 +33,28 @@
     .product-sale_info{
         display: none;
     }
+    .position-price{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgb(39, 194, 194);
+        padding: 20px;
+        z-index: 100;
+    }
+    .position-price input{
+        margin: 5px;
+        flex: 1 1 50%;
+    }
+    .position-price button{
+        flex: 1 1 50%;
+    }
+    .product-content_info .display-none{
+        display: none;
+    }
 }
 /* Tablet device */
 @media screen and (max-width: 1240px){

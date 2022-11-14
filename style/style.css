@@ -203,6 +203,20 @@ body{
     margin: 5px;
     position: relative;
 }
+.bg-color{
+    background-color:rgb(183, 240, 240) !important;
+}
+.form-control,
+textarea{
+    background-color: rgb(207, 236, 242) !important;
+}
+textarea{
+    padding: 15px;
+    font-size: 16px;
+}
+.text-left{
+    text-align: left;
+}
 .card-position span{
     transition: all 0.5s ease-in-out;
 }
@@ -363,8 +377,8 @@ body{
     display: flex;
     margin-top: 100px;
     margin-bottom: 40px;
-    padding: 10px;
     background-color: white;
+    padding: 5px;
     border-radius: 10px;
 }
 .product-image_info{
