@@ -14,7 +14,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <!-- Link Icon Web -->
   <link rel="icon" href="./images/logo.png" />
-  <title>STU Light Novel</title>
+  <title>STU Light Novel | Đăng Ký</title>
 </head>
 
 <body>
@@ -102,51 +102,58 @@
     </div>
     <!-- end position form -->
 
-    <!-- banner -->
-    <div class="banner mx-3">
-      <div id="carouselBannerControl" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="#">
-              <img src="./images/banner1.jpg" class="d-block w-100" alt="Khuyến Mãi" />
+    <div class="content-sign-in">
+      <div class="form-sign-in">
+        <form id="main-form">
+          <div class="form-header">
+            <h2>Đăng Ký Tài Khoản</h2>
+            <a href="./index.html">
+              <img src="./images/logo.png">
             </a>
           </div>
-          <div class="carousel-item">
-            <a href="#">
-              <img src="./images/banner2.jpg" class="d-block w-100" alt="Khuyến Mãi" />
-            </a>
+          <div class="form-body">
+            <div class="form-content">
+              <input type="text" placeholder="Họ Tên" class="input-check" id="user" onblur="remove()">
+              <div id="form-info_user" style="color: red; font-size:12px; text-align:left;"></div>
+            </div>
+            <div class="form-content">
+              <input type="text" placeholder="Tên Đăng Nhập" class="input-check" id="account-name" onblur="remove()">
+              <div id="form-info_account" style="color: red; font-size:12px; text-align:left;"></div>
+            </div>
+            <div class="form-content">
+              <input type="password" placeholder="Mật Khẩu" class="input-check" id="password" onblur="remove()">
+              <div id="form-info_pass" style="color: red; font-size:12px; text-align:left;"></div>
+            </div>
+            <div class="form-content">
+              <input type="password" placeholder="Nhập lại mật khẩu" class="input-check" id="check-password" onblur="remove()">
+              <div id="form-info_checkpass" style="color: red; font-size:12px; text-align:left;"></div>
+            </div>
+            <div class="form-content" style="text-align: left;"> 
+              <label for="region">Chọn Khu Vực</label><br>
+              <select name="region" id="region" style="width: 100%; margin: 3px auto;" required onblur="remove()">
+                <option value="" class="region" selected>Khu Vực Sinh Sống Gần Bạn Nhất</option>
+                <option value="1" class="region">TP.HCM</option>
+                <option value="1" class="region">Hà Nội</option>
+                <option value="1" class="region">Đà Nẵng</option>
+                <option value="1" class="region">Cà Mau</option>
+              </select>
+              <div id="form-info_region" style="color: red; font-size:12px; text-align:left;"></div>
+            </div>
+            <div class="form-content" style="text-align: left;"> 
+              <input type="checkbox" id="yes" value="yes" style="width: 5%;" onblur="remove()">
+              <label for="yes" style="font-size: 13px;">Đồng ý điều khoản mua hàng của chúng tôi</label>
+              <div id="form-info_sucess" style="color: red; font-size:12px; text-align:left;"></div>
+            </div>
+            <div class="form-content">
+              <input type="button" value="Đăng Ký Ngay" class="btn" onclick="sign()">
+              <div id="form-info"></div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <a href="#">
-              <img src="./images/banner3.jpg" class="d-block w-100" alt="Khuyến Mãi" />
-            </a>
+          <div class="form-footer">
+            <p>Bạn đã có tài khoản - <a href="./login.html">Đăng nhập ngay</a></p>
           </div>
-          <div class="carousel-item">
-            <a href="#">
-              <img src="./images/banner4.jpg" class="d-block w-100" alt="Khuyến Mãi" />
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#">
-              <img src="./images/Banner5.jpg" class="d-block w-100" alt="Khuyến Mãi" />
-            </a>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannerControl"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselBannerControl"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        </form>
       </div>
-    </div>
-    <!-- end banner -->
-    <div class="content-sign-up m-3">
-
     </div>
   
     <!-- footer -->

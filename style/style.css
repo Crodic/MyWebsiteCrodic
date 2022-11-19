@@ -26,6 +26,10 @@ ul{
 body{
     background-color:rgb(183, 240, 240) !important;
 }
+.error{
+    border: 3px solid red !important;
+    color: red;
+}
 /* Header */
 .container-padding{
     padding: 0px !important;
@@ -324,6 +328,7 @@ textarea{
 .header-color{
     color: red;
 }
+
 /* footer */
 .footer{
     font-weight:100;
@@ -364,15 +369,28 @@ textarea{
     font-size: 20px !important;
 }
 
-/* login */
-/* .content-login,
-.content-sign-up,
-.content-product_items{
+
+/* product list items  */
+.content-list{
+    display: flex;
     min-height: 800px;
-} */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+.content-list_left{
+    border: 1px solid black;
+    border-radius: 10px 0px 0px 10px;
+    flex: 1 1 20%;
+}
+.content-list_right{
+    border: 1px solid black;
+    border-radius: 0px 10px 10px 0px;
+    flex: 1 1 80%;
+}
 
-
-/* product-info */
+/* product items HTML */
 .content-product_items{
     display: flex;
     margin-top: 100px;
@@ -416,4 +434,44 @@ textarea{
 }
 .btn-code:hover{
     background-color: rgb(21, 241, 241);
+}
+
+/* form sign in */
+.content-sign-in{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+.form-sign-in{
+    box-sizing: border-box;
+    background-color: aquamarine;
+    box-shadow: 10px 10px 10px 10px rgb(147, 156, 237);
+    padding: 50px 130px;  
+    border-radius: 10%; 
+}
+.form-header{
+    text-align: center;
+}
+.form-header img{
+    margin: 20px;
+}
+.form-content{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.form-content .input-check{
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: var(--main-color);
+    width: 100%;
+    height: 40px;
+}
+.form-footer::before{
+    content: " ";
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid black;
+    opacity: 0.3;
+    margin: 10px;
 }
