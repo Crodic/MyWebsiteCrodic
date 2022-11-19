@@ -464,7 +464,7 @@ textarea{
     border-radius: 10px;
     padding: 10px;
     background-image: var(--main-color);
-    width: 100%;
+    width: 20rem;
     height: 40px;
 }
 .form-footer::before{
