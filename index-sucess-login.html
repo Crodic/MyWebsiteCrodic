@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div class="back" title="trở lại đầu trang">
+  <div class="back">
     <a href="#top">
       <div class="back-to_top">
         <img src="./images/up-icon.png" width="100%" style="color: black;">
@@ -68,10 +68,16 @@
                 </ul>
               </li>
               <li class="nav-pc_none nav-item">
-                <a class="nav-link" aria-current="page" href="./login.html">Đăng Nhập</a>
+                <a class="nav-link" aria-current="page" href="#">
+                  <i class="fa-sharp fa-solid fa-user-secret" style="font-size: 20px; padding: 5px; color: black;"></i>
+                  <span>Crodic Crystal</span>
+                </a>
               </li>
               <li class="nav-pc_none nav-item">
-                <a class="nav-link" aria-current="page" href="./sign-up.html">Đăng Ký</a>
+                <a class="nav-link" aria-current="page" href="#">
+                  <i class="fa-solid fa-cart-shopping" style="font-size: 20px; padding: 5px; color: black;"></i>
+                  <span>Giỏ Hàng</span>
+                </a>
               </li>
             </ul>
             <form class="search d-flex" role="search">
@@ -90,23 +96,25 @@
 
     <!-- position form -->
     <div class="info-account">
-      <div class="info-account_top" title="Đăng Nhập">
-        <a href="./login.html">
-          <img src="./images/login.ico" width="50px" /><br />
-        </a>
-        <div class="position-login">
-          <span>Đăng nhập để mua sắm</span>
+        <div class="info-account_top" title="Đăng Nhập">
+          <a href="./breakpoint.html">
+            <i class="fa-sharp fa-solid fa-user-secret" style="font-size: 40px; padding: 5px; color: black;"></i> <br />
+          </a>
+          <div class="position-login">
+            <span id="name-sucess">Crodic Crystal</span><br>
+            <span>Ví: 1.000.000đ</span>
+          </div>
+        </div>
+        <div class="info-account_bot" title="Đăng Ký">
+          <a href="./breakpoint.html">
+            <i class="fa-solid fa-cart-shopping" style="font-size: 35px; padding: 5px; color: aqua;"></i><br />
+          </a>
+          <div class="position-sign-in">
+            <span>Giỏ đồ hiện tại đang rỗng</span>
+            <span>Sản Phẩm: 0</span>
+          </div>
         </div>
       </div>
-      <div class="info-account_bot" title="Đăng Ký">
-        <a href="./sign-up.html">
-          <img src="./images/dangky-icon.png" width="50px" height="50px" /><br />
-        </a>
-        <div class="position-sign-in">
-          <span>Đăng ký để nhận ưu đãi</span>
-        </div>
-      </div>
-    </div>
     <!-- end position form -->
 
     <!-- banner -->
@@ -896,13 +904,13 @@
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <input type="text" class="form-control" id="name" placeholder="Họ và Tên.">
+                <input type="text" class="form-control" id="recipient-name" placeholder="Họ và Tên.">
               </div>
               <div class="mb-3">
-                <input type="text" class="form-control" id="phone" placeholder="Số điện thoại">
+                <input type="text" class="form-control" id="recipient-name" placeholder="Số điện thoại">
               </div>
               <div class="mb-3">
-                <input type="email" class="form-control" id="email-order" placeholder="Email">
+                <input type="text" class="form-control" id="recipient-name" placeholder="Email">
               </div>
               <div class="mb-3 text-left">
                 <h5>Đơn vị giao hàng (bạn mong muốn)</h5>
@@ -922,7 +930,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn" data-bs-dismiss="modal">Đóng</button>
-            <button type="submit" class="btn" onclick="submitOrder()">Đặt Hàng</button>
+            <button type="submit" class="btn">Đặt Hàng</button>
           </div>
         </div>
       </div>

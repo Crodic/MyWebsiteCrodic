@@ -55,6 +55,11 @@
     .product-content_info .display-none{
         display: none;
     }
+    .back{
+        position: fixed;
+        right: 30px;
+        bottom: 90px;
+    }
 }
 /* Tablet device */
 @media screen and (max-width: 1240px){
