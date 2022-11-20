@@ -18,6 +18,13 @@
 </head>
 
 <body>
+  <div class="back">
+    <a href="#top">
+      <div class="back-to_top">
+        <img src="./images/up-icon.png" width="100%" style="color: black;">
+      </div>
+    </a>
+  </div>
   <!-- container -->
   <div class="container-padding container-fluid">
     <!-- Header -->
@@ -40,13 +47,13 @@
                 <a class="nav-link" aria-current="page" href="./index.html" active="true">Trang Chủ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#about">Giới Thiệu</a>
+                <a class="nav-link" aria-current="page" href="./about.html">Giới Thiệu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#product-1">Sản Phẩm Hot</a>
+                <a class="nav-link" aria-current="page" href="./index.html">Sản Phẩm Hot</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#product-3">Sản Phẩm Nước Ngoài</a>
+                <a class="nav-link" aria-current="page" href="./index.html">Sản Phẩm Nước Ngoài</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -55,16 +62,16 @@
                   <i class="fa-solid fa-sort-down"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#product-2">Manga/Anime</a></li>
-                  <li><a class="dropdown-item" href="#nav-china-tab">Ngôn Tình</a></li>
-                  <li><a class="dropdown-item" href="#nav-cs-tab">Tâm Lý</a></li>
+                  <li><a class="dropdown-item" href="./index.html">Manga/Anime</a></li>
+                  <li><a class="dropdown-item" href="./index.html">Ngôn Tình</a></li>
+                  <li><a class="dropdown-item" href="./index.html">Tâm Lý</a></li>
                 </ul>
               </li>
               <li class="nav-pc_none nav-item">
-                <a class="nav-link" aria-current="page" href="#">Đăng Nhập</a>
+                <a class="nav-link" aria-current="page" href="./login.html">Đăng Nhập</a>
               </li>
               <li class="nav-pc_none nav-item">
-                <a class="nav-link" aria-current="page" href="#">Đăng Ký</a>
+                <a class="nav-link" aria-current="page" href="./sign-up.html">Đăng Ký</a>
               </li>
             </ul>
             <form class="search d-flex" role="search">
@@ -145,7 +152,7 @@
               <div id="form-info_sucess" style="color: red; font-size:12px; text-align:left;"></div>
             </div>
             <div class="form-content">
-              <input type="button" value="Đăng Ký Ngay" class="btn" onclick="sign()">
+              <input type="button" value="Đăng Ký Ngay" class="btn" onclick="sign()" ondblclick="return isSign(value)">
               <div id="form-info"></div>
             </div>
           </div>
@@ -212,10 +219,10 @@
               <li>
                 <h6>Danh Mục Công Ty</h6>
               </li>
-              <li><a href="#">Chính sách đổi trả hàng.</a></li>
-              <li><a href="#">Phí Vận Chuyển từng khu vực</a></li>
-              <li><a href="#">Quản Lý Đơn Hàng</a></li>
-              <li><a href="#">Chính sách huỷ đơn hàng</a></li>
+              <li><a href="./about.html">Chính sách đổi trả hàng.</a></li>
+              <li><a href="./about.html">Phí Vận Chuyển từng khu vực</a></li>
+              <li><a href="./about.html">Quản Lý Đơn Hàng</a></li>
+              <li><a href="./about.html">Chính sách huỷ đơn hàng</a></li>
             </ul>
           </div>
         </div>

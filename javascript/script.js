@@ -43,6 +43,7 @@ function sign() {
     var region = document.getElementById('region').value
     var sucess= document.getElementById('yes')
     var isSucess=sucess.checked;
+    //Kiểm tra Họ Ten
     if(user.length == 0 || isNaN(user)==false){
         document.getElementById('form-info_user').innerHTML="Vui Lòng Nhập Họ Tên hợp lệ"
         document.getElementById('user').classList.add('error')
@@ -50,7 +51,7 @@ function sign() {
         document.getElementById('user').classList.remove('error')
         document.getElementById('form-info_user').innerHTML=" "
     }
-
+    //Kiểm tra Tên Đăng nhập
     if(accountName.length == 0 || accountName.length < 4){
         document.getElementById('form-info_account').innerHTML="Tên đăng nhập không hợp lệ"
         document.getElementById('account-name').classList.add('error')
@@ -58,7 +59,7 @@ function sign() {
         document.getElementById('form-info_account').innerHTML=" "
         document.getElementById('account-name').classList.remove('error')
     }
-
+    //Kiểm tra mật khẩu
     if(pass.length==0 || pass.length < 6 || pass !=checkPass){
         document.getElementById('form-info_pass').innerHTML="Mật khẩu phải trên 6 ký tự"
         document.getElementById('password').classList.add('error')
@@ -66,7 +67,7 @@ function sign() {
         document.getElementById('form-info_pass').innerHTML=" "
         document.getElementById('password').classList.remove('error')
     }
-    
+    //Kiểm tra lại mật khẩu
     if(checkPass.length==0||checkPass!=pass){
         document.getElementById('form-info_checkpass').innerHTML="Mật khẩu không khớp với mật khẩu vừa nhập"
         document.getElementById('check-password').classList.add('error')
@@ -74,15 +75,23 @@ function sign() {
         document.getElementById('form-info_checkpass').innerHTML= " "
         document.getElementById('check-password').classList.remove('error')
     }
+    //Kiểm tra selection/option
     if(region.length==0){
         document.getElementById('form-info_region').innerHTML="Bạn phải chọn khu vực sinh sống"
     }else if(region.length!=''){
         document.getElementById('form-info_region').innerHTML=" "
     }
+    //Kiểm tra checkbox
     if(isSucess==false){
         document.getElementById('form-info_sucess').innerHTML="Bạn chưa đồng ý với <a href='#'>điều khoản</a> "
     }else if(isSucess){
         document.getElementById('form-info_sucess').innerHTML=" "
+    }
+    //Kiểm tra nếu form đúng thì chuyển sang trang đăng nhập
+    if(user.length != '' && isNaN(user)==true && accountName.length !='' && accountName.length>4 && pass.length!=null && pass.length>6 
+        && checkPass.length!='' && checkPass==pass && region.length!='' && isSucess==true){
+            alert("Bạn đã đăng ký thành công account '"+accountName+"' . Nhấn OK để chuyển sang trang đăng nhập")
+            window.location.href="login.html"
     }
 }
 function remove() {

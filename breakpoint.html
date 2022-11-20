@@ -14,10 +14,18 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <!-- Link Icon Web -->
   <link rel="icon" href="./images/logo.png" />
-  <title>STU Light Novel</title>
+  <title>STU Light Novel | Đăng Nhập</title>
 </head>
 
 <body>
+  <div class="back">
+    <a href="#top">
+      <div class="back-to_top">
+        <img src="./images/up-icon.png" width="100%" style="color: black;">
+      </div>
+    </a>
+  </div>
+  <!-- container -->
   <div class="container-padding container-fluid">
     <!-- Header -->
     <header class="header">
@@ -25,7 +33,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <!-- Logo -->
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./index.html">
             <img src="./images/logo.png" width="60px" height="50px" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -36,19 +44,28 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Trang Chủ</a>
+                <a class="nav-link" aria-current="page" href="./index.html" active="true">Trang Chủ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Giới Thiệu</a>
+                <a class="nav-link" aria-current="page" href="#about">Giới Thiệu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Thành Tựu</a>
+                <a class="nav-link" aria-current="page" href="#product-1">Sản Phẩm Hot</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Danh Mục</a>
+                <a class="nav-link" aria-current="page" href="#product-3">Sản Phẩm Nước Ngoài</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Sản Phẩm Nước Ngoài</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Danh Mục
+                  <i class="fa-solid fa-sort-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#product-2">Manga/Anime</a></li>
+                  <li><a class="dropdown-item" href="#nav-china-tab">Ngôn Tình</a></li>
+                  <li><a class="dropdown-item" href="#nav-cs-tab">Tâm Lý</a></li>
+                </ul>
               </li>
               <li class="nav-pc_none nav-item">
                 <a class="nav-link" aria-current="page" href="#">Đăng Nhập</a>
@@ -71,12 +88,74 @@
     </header>
     <!-- end header -->
 
-    <!-- code ở đây -->
-    <div class="content">
-        
+    <!-- position form -->
+    <div class="info-account">
+      <div class="info-account_top" title="Đăng Nhập">
+        <a href="./login.html">
+          <img src="./images/login.ico" width="50px" /><br />
+        </a>
+        <div class="position-login">
+          <span>Đăng nhập để mua sắm</span>
+        </div>
+      </div>
+      <div class="info-account_bot" title="Đăng Ký">
+        <a href="./sign-up.html">
+          <img src="./images/dangky-icon.png" width="50px" height="50px" /><br />
+        </a>
+        <div class="position-sign-in">
+          <span>Đăng ký để nhận ưu đãi</span>
+        </div>
+      </div>
     </div>
-    <!-- code ở khoảng này -->
-    
+    <!-- end position form -->
+
+    <!-- banner -->
+    <div class="banner mx-3">
+      <div id="carouselBannerControl" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#">
+              <img src="./images/banner1.jpg" class="d-block w-100" alt="Khuyến Mãi" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#">
+              <img src="./images/banner2.jpg" class="d-block w-100" alt="Khuyến Mãi" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#">
+              <img src="./images/banner3.jpg" class="d-block w-100" alt="Khuyến Mãi" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#">
+              <img src="./images/banner4.jpg" class="d-block w-100" alt="Khuyến Mãi" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#">
+              <img src="./images/Banner5.jpg" class="d-block w-100" alt="Khuyến Mãi" />
+            </a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannerControl"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBannerControl"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- end banner -->
+    <div class="content-login m-3">
+
+    </div>
+  
     <!-- footer -->
     <footer class="footer">
       <div class="footer-left">
@@ -110,39 +189,45 @@
               </li>
               <li>
                 <a href="#">
-                  <i class="fa-brands fa-facebook" style="font-size: 50px; color: blue;"></i>
+                  <i class="fa-brands fa-facebook" style="font-size: 50px; color: blue; vertical-align: middle;"></i>
                   <span class="color-hover">Crodic Crystal</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="fa-brands fa-tiktok" style="font-size: 50px; color: black;"></i>
+                  <i class="fa-brands fa-tiktok" style="font-size: 50px; color: black; vertical-align: middle;"></i>
                   <span class="color-hover">Phát Trần Trọng</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="fa-brands fa-youtube" style="font-size: 50px; color:red;"></i>
-                  <span class="color-hover">STU LIGHTNOVEL</span>
+                  <i class="fa-brands fa-youtube" style="font-size: 50px; color:red; vertical-align: middle;"></i>
+                  <span class="color-hover">LIGHT NOVEL</span>
                 </a>
               </li>
             </ul>
           </div>
           <div class="bot-flex_2">
             <ul>
-              <li style="margin-bottom: 55px;"><h6>Danh Mục Công Ty</h6></li>
-              <li><a href="#">Chính sách đổi trả hàng.</a></li>
-              <li><a href="#">Phí Vận Chuyển từng khu vực</a></li>
-              <li><a href="#">Quản Lý Đơn Hàng</a></li>
-              <li><a href="#">Chính sách huỷ đơn hàng</a></li>
+              <li>
+                <h6>Danh Mục Công Ty</h6>
+              </li>
+              <li><a href="./about.html">Chính sách đổi trả hàng.</a></li>
+              <li><a href="./about.html">Phí Vận Chuyển từng khu vực</a></li>
+              <li><a href="./about.html">Quản Lý Đơn Hàng</a></li>
+              <li><a href="./about.html">Chính sách huỷ đơn hàng</a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+    <!-- end footer -->
+
   </div>
+<!-- end container -->
 
   <!-- Bootstrap JS -->
+  <script src="./javascript/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
