@@ -237,6 +237,24 @@ textarea{
     border-radius: 7px;
     padding: 5px;
 }
+.product-items{
+    display: flex;
+    flex-direction: column;
+}
+.card-button{
+    flex: 1 2 100%;
+    margin-top:auto ;
+    margin-bottom: 5px;
+}
+/* .product-items{
+    position: relative;
+}
+.card-button{
+    position: absolute;
+    bottom: 5px;
+    right: 50%;
+    transform: translateX(50%);
+} */
 .card-top{
     box-sizing: border-box;
     margin-top: 20px !important;
@@ -247,12 +265,13 @@ textarea{
     transform: scale(1.1);
     cursor: pointer;
 }
-.card-bot .price-items{
+.price-items{
     color: red;
     font-size: 20px;
 }
 .card-top,
 .card-bot{
+    flex: 1 1 100%;
     margin: 5px;
 }
 .btn-pre_order{
