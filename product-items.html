@@ -18,6 +18,9 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0" nonce="ugwkZvs4"></script>
+  
   <div class="back">
     <a href="#top">
       <div class="back-to_top">
@@ -114,8 +117,10 @@
     <div class="content-product_items mx-3">
       <div class="product-image_info">
         <img src="./images/product-cn-1.jpg" width="100%">
-        <p style="font-size: 12px; margin-top: 10px;">Con bạn sẽ không bao giờ thi trượt nữa vì giờ đây YTC đã cung cấp cho bạn đầy đủ kiến thức mà bạn có để
-          chinh phục các kỳ thi từ thấp đến cao, giúp con bạn có những kiến thức để tham gia các kỳ thi. Nhanh tay sắm ngay 1 cuốn cho con
+        <p style="font-size: 12px; margin-top: 10px;">Con bạn sẽ không bao giờ thi trượt nữa vì giờ đây YTC đã cung cấp
+          cho bạn đầy đủ kiến thức mà bạn có để
+          chinh phục các kỳ thi từ thấp đến cao, giúp con bạn có những kiến thức để tham gia các kỳ thi. Nhanh tay sắm
+          ngay 1 cuốn cho con
           bạn nào
         </p>
       </div>
@@ -127,15 +132,17 @@
           <i class="fa-solid fa-star" style="color: yellow;"></i>
           <i class="fa-solid fa-star" style="color: yellow;"></i>
         </span><br><br>
-        <span class="price" style="color: red; font-size: 25px;">125.000đ &nbsp;&nbsp; <del style="color: rgb(157, 45, 45);">200.000đ</del></span><br><br>
-        <span>Chính Sách Đổi trả: <br> Đổi trả sản phẩm trong vòng 30 ngày <a href="./about.html">Xem thêm</a></span><br><br>
+        <span class="price" style="color: red; font-size: 25px;">125.000đ &nbsp;&nbsp; <del
+            style="color: rgb(157, 45, 45);">200.000đ</del></span><br><br>
+        <span>Chính Sách Đổi trả: <br> Đổi trả sản phẩm trong vòng 30 ngày <a href="./about.html">Xem
+            thêm</a></span><br><br>
         <form action="get">
           <label for="number">Số Lượng</label>
           <input type="number" name="number" id="number" value="1" min="1" max="100"
             style="padding-left: 10px;"><br><br>
-          <input type="button" class="btn m-1 display-none" value="Giỏ Hàng" >
+          <input type="button" class="btn m-1 display-none" value="Giỏ Hàng">
           <button type="button" class="btn display-none" data-bs-toggle="modal" data-bs-target="#exampleModal"
-          data-bs-whatever="@mdo">Mua Ngay</button>
+            data-bs-whatever="@mdo">Mua Ngay</button>
         </form>
       </div>
       <div class="product-sale_info">
@@ -155,6 +162,12 @@
         </div>
       </div>
     </div>
+    <!-- comment form  -->
+    <div class="cmt-facebook m-3 text-center">
+      <h2 class="header-comment m-5">Đánh giá sản phẩm từ người dùng</h2>
+      <div class="fb-comments" data-href="http://127.0.0.1:5500/product-items.html" data-width="400" data-numposts="100"></div>
+    </div>
+    <!-- end comment form  -->
     <!-- end content  -->
     <!-- modal  -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -187,9 +200,10 @@
               </div>
               <div class="mb-3 text-left">
                 <h5>Yêu cầu cho shipper</h5>
-                <textarea name="wish" id="wish" cols="50" rows="5"></textarea>
+                <textarea name="wish" id="wish" cols="30" rows="5"></textarea>
               </div>
             </form>
+            <div id="info-error" class="text-center" style="color: red; font-size:12px;"></div><br>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn" data-bs-dismiss="modal">Đóng</button>
@@ -201,7 +215,7 @@
     <div class="position-price">
       <input type="button" value="Giỏ Hàng" class="btn">
       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
-      data-bs-whatever="@mdo">Mua Ngay</button>
+        data-bs-whatever="@mdo">Mua Ngay</button>
     </div>
     <!-- end modal  -->
     <!-- product recommend -->
@@ -247,7 +261,7 @@
             <div class="card-top">
               <a href="./product-items.html">
                 <a href="./product-items.html">
-              </a>
+                </a>
                 <img src="./images/product_type1_2.jpg" width="70%">
               </a>
             </div>
@@ -306,7 +320,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- end product recommend  -->
     <!-- end content  -->
     <!-- footer -->

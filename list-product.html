@@ -112,12 +112,868 @@
     <!-- end position form -->
     <!-- content -->
     <div class="content-list mx-3">
-        <div class="content-list_left">
-
+      <div class="content-list_left m-3">
+        <div class="mobile-tablet_only">
+          <button class="btn text" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <i class="fa-solid fa-list"></i>
+            Danh mục Sản Phẩm
+          </button>
+          <div class="offcanvas offcanvas-start text-left offcanvas-bgcolor" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header ">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                <i class="fa-solid fa-list"></i>
+                Danh Mục
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-product_offcanvas">
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="#">Tiểu thuyết ngôn tình</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="#">Tiểu thuyết tâm lý</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="#">Tiểu thuyết tình cảm</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="#">Anime/Manga</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="#">ArtBook</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="#">Truyện tranh</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="#">Tiểu thuyết thiếu nhi</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="#">Đồ lưu niệm</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="#">Figure</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="#">Gối ôm</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="content-list_right">
-
+        <div class="pc-only" id="list-product_pc">
+          <ul >
+            <li>
+              <h6 class="my-3">
+                <i class="fa-solid fa-list"></i>
+                Danh mục sản phẩm
+              </h6>
+            </li>
+            <li>
+              <i class="fa-solid fa-caret-right"></i>
+              <a href="#">Tiểu thuyết ngôn tình</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-caret-right"></i>
+              <a href="#">Tiểu thuyết tâm lý</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-caret-right"></i>
+              <a href="#">Tiểu thuyết tình cảm</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-caret-right"></i>
+              <a href="#">Anime/Manga</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-caret-right"></i>
+              <a href="#">ArtBook</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-caret-right"></i>
+              <a href="#">Truyện tranh</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-caret-right"></i>
+              <a href="#">Tiểu thuyết thiếu nhi</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-caret-right"></i>
+              <a href="#">Đồ lưu niệm</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-caret-right"></i>
+              <a href="#">Figure</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-caret-right"></i>
+              <a href="#">Gối ôm</a>
+            </li>
+          </ul>
         </div>
+      </div>
+
+      <div class="content-list_right">
+        <div id="product-1" class="container-product m-3">
+          <div class="header-product">
+            <h4 class="text-center p-1" style="color: red;">
+              <i class="fa-brands fa-hotjar"></i>
+              Sản Phẩm Ưa Chuộng
+              <i class="fa-brands fa-hotjar"></i>
+            </h4>
+            <div class="product product-wrap m-3">
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product_type1_1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Tinh Thần Bền Bỉ</h5>
+                  <span>Rèn luyện 1 tinh thần thép ngay....</span><br>
+                  <span class="price-items">197.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>250.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product_type1_2.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Hiệu ứng Lucifer</h5>
+                  <span>Rất nhiều điều thú vị đang chờ bạn.</span><br>
+                  <span class="price-items">423.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>500.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product_type1_3.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Tâm Lý Học Tính Cách</h5>
+                  <span>Tìm hiểu rõ nét nhất về tâm lý....</span><br>
+                  <span class="price-items">291.999đ</span><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product_type1_4.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Toàn Thư Tâm Lý Học</h5>
+                  <span>Tâm lý luôn là thứ khó kiểm soát nhất</span><br>
+                  <span class="price-items">59.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp;<del>100.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product_type2_1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Monster #8 - Tập 6</h5>
+                  <span>Kafka rơi vào tình thế hiểm nghèo vì những chuyện..</span><br>
+                  <span class="price-items">200.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>250.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product_type2_2.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Classroom of the Elite #4</h5>
+                  <span>Chào Mừng Đến Lớp Học Đề Cao Thực Lực..</span><br>
+                  <span class="price-items">225.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>500.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product_type2_3.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Chainsaw Man - Tập 1</h5>
+                  <span>Câu chuyện của CHAINSAW MAN mô tả một thế giới nơi ma quỷ và ...</span><br>
+                  <span class="price-items">91.999đ</span><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product_type2_4.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Dragon Ball #6 Full Color</h5>
+                  <span>Cùng Son GoHan và những người bạn tiêu diệt Sên Bọ Hung ...</span><br>
+                  <span class="price-items">123.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp;<del>100.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+              <div class="product-items">
+                <div class="card-position">
+                  <span>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                  </span>
+                </div>
+                <div class="card-top">
+                  <a href="./product-items.html">
+                    <img src="./images/product-us-1.jpg" width="70%">
+                  </a>
+                </div>
+                <div class="card-bot">
+                  <h5>Make it easy</h5>
+                  <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Mua Ngay</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- modal  -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -164,7 +1020,7 @@
     <!-- end modal  -->
 
     <!-- end content  -->
-    
+
     <!-- footer -->
     <footer class="footer">
       <div class="footer-left">

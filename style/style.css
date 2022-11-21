@@ -274,7 +274,9 @@ textarea{
     background-color: rgb(0, 208, 255) !important;
     color: rgb(69, 69, 69);
 }
-
+.product-wrap{
+    flex-wrap: wrap;
+}
 
 
 
@@ -331,6 +333,10 @@ textarea{
 
 /* footer */
 .footer{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
     font-weight:100;
     padding: 20px;
     background-image: var(--main-color);
@@ -380,12 +386,12 @@ textarea{
     border-radius: 10px;
 }
 .content-list_left{
-    border: 1px solid black;
-    border-radius: 10px 0px 0px 10px;
+    background-color: aliceblue;
+    border-radius: 10px 10px 10px 10px;
     flex: 1 1 20%;
+    max-height: 320px;
 }
 .content-list_right{
-    border: 1px solid black;
     border-radius: 0px 10px 10px 0px;
     flex: 1 1 80%;
 }
@@ -451,7 +457,8 @@ textarea{
     box-sizing: border-box;
     background-color: aquamarine;
     box-shadow: 10px 10px 10px 10px rgb(147, 156, 237);
-    padding: 50px 100px;  
+    max-width: fit-content;
+    padding: 50px 60px;  
     border-radius: 10%; 
 }
 .form-header{
@@ -501,4 +508,19 @@ textarea{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+/* cmt facebook */
+.cmt-facebook{
+    box-sizing: border-box;
+    background-color: azure;
+    padding: 20px;
+    border-radius: 10px;
+}
+.header-comment{
+    color: red;
+    text-transform: uppercase;;
+}
+.mobile-tablet_only{
+    display: none;
 }

@@ -4,7 +4,7 @@ function checkEmail() {
     if (email != '' && email != null) {
         //Kiểm tra email đã đúng định dạng hay chưa
         if (email.match(checkEmail)) {
-            confirm("Email: " + email + " đã đăng ký nhận thông báo thành công")
+            confirm("Email: " + email + " đã đăng ký nhận thông báo thành công. Đăng ký tài khoản ngay")
         }
     } else {
         alert("Email không hợp lệ vui lòng thử lại.")
@@ -22,7 +22,7 @@ function submitOrder() {
             if (emailOrder != '' && emailOrder != null) {
                 if (emailOrder.match(checkEmail)) {
                     var orderCheck = prompt("Xác nhận lại số lượng mua hàng (Đây là kết quả cuối cùng)")
-                    if(orderCheck.length==0 && isNaN(orderCheck)==false && orderCheck==true){
+                    if(orderCheck!='' && orderCheck>0 && orderCheck<100){
                         var check = confirm("Tên Khách Hàng: "+name
                         +" \n Số điện thoại: "+phone
                         +" \n Email: "+emailOrder
@@ -34,7 +34,7 @@ function submitOrder() {
                             window.location.href="./index.html"
                         }
                     }else{
-                        error.innerHTML="Số lượng bạn nhập không hợp lệ"
+                        error.innerHTML="Số lượng bạn nhập không hợp lệ hoặc chưa được nhập"
                     }
                 } else {
                     alert("Email không hợp lệ vui lòng thử lại.")

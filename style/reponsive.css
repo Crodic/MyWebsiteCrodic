@@ -60,6 +60,22 @@
         right: 30px;
         bottom: 90px;
     }
+    .content-list{
+        flex-direction: column;
+    }
+    #list-product_pc{
+        display: none;
+    }
+    .mobile-tablet_only{
+        display: block;
+        text-align: center;
+    }
+    .content-list_left{
+        background-color: aliceblue;
+    }
+    .offcanvas-bgcolor{
+        background-color: aliceblue !important;
+    }
 }
 /* Tablet device */
 @media screen and (max-width: 1240px){
@@ -82,5 +98,21 @@
     }
     .product-sale_info{
         display: none;
+    }
+    .content-list{
+        flex-direction: column;
+    }
+    .product .product-items{
+        flex: 1 1 40%;
+    }
+    .mobile-tablet_only{
+        display: block;
+    }
+    .mobile-tablet_only{
+        display: block;
+        text-align: center;
+    }
+    .content-list_left{
+        background-color: aliceblue;
     }
 }
