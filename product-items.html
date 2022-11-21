@@ -19,8 +19,9 @@
 
 <body>
   <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0" nonce="ugwkZvs4"></script>
-  
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0"
+    nonce="ugwkZvs4"></script>
+
   <div class="back">
     <a href="#top">
       <div class="back-to_top">
@@ -66,7 +67,8 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="./index.html">Manga/Anime</a></li>
-                  <li><a class="dropdown-item" href="./index.html">Giỏ Hàng</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" 
+                    aria-controls="offcanvasWithBothOptions">Giỏ Hàng</a></li>
                   <li><a class="dropdown-item" href="./index.html">Kho Mã Giảm Giá</a></li>
                 </ul>
               </li>
@@ -78,10 +80,10 @@
               </li>
             </ul>
             <form class="search d-flex" role="search">
-              <input class="search-input form-control me-2" type="search" placeholder="Tìm Light Novel "
+              <input class="search-input form-control me-2" type="search" id="search" placeholder="Tìm Light Novel "
                 aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">
-                <img src="./images/search.png" width="25px" />
+              <button type="button" class="btn">
+                <img src="./images/search.png" width="25px" onclick="searchProduct()">
               </button>
             </form>
           </div>
@@ -140,7 +142,8 @@
           <label for="number">Số Lượng</label>
           <input type="number" name="number" id="number" value="1" min="1" max="100"
             style="padding-left: 10px;"><br><br>
-          <input type="button" class="btn m-1 display-none" value="Giỏ Hàng">
+          <button class="btn m-1 display-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Giỏ Hàng</button>
           <button type="button" class="btn display-none" data-bs-toggle="modal" data-bs-target="#exampleModal"
             data-bs-whatever="@mdo">Mua Ngay</button>
         </form>
@@ -162,10 +165,108 @@
         </div>
       </div>
     </div>
+
+    <div class="offcanvas offcanvas-start offcanvas-bg" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-center border-bottom p-1" id="offcanvasWithBothOptionsLabel">
+          <img src="./images/shopping-icon.webp" width="10%" style="display: inline-block;">
+          Giỏ Hàng của bạn
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body offcanvas-display">
+        <div class="items" id="product-delete_1">
+          <div class="items-img">
+            <img src="./images/product-cn-1.jpg" width="100%">
+          </div>
+          <div class="items-name">
+            <span>YTC</span>
+          </div>
+          <div class="items-number">
+            <input type="number" style="width: 80px;" value="1" readonly>
+          </div>
+          <div class="items-delete">
+            <button class="btn-delete" onclick="deleteProduct1()">X</button>
+          </div>
+        </div>
+        <div class="items" id="product-delete_2">
+          <div class="items-img">
+            <img src="./images/product-jp-4.jpg" width="100%">
+          </div>
+          <div class="items-name">
+            <span>10 Phút tự học tiếng nhật</span>
+          </div>
+          <div class="items-number">
+            <input type="number" style="width: 80px;" value="10" readonly>
+          </div>
+          <div class="items-delete">
+            <button class="btn-delete" onclick="deleteProduct2()">X</button>
+          </div>
+        </div>
+        <div class="items" id="product-delete_3">
+          <div class="items-img">
+            <img src="./images/product-us-1.jpg" width="100%">
+          </div>
+          <div class="items-name">
+            <span>Make is <br> Easy</span>
+          </div>
+          <div class="items-number">
+            <input type="number" style="width: 80px;" value="5" readonly>
+          </div>
+          <div class="items-delete">
+            <button class="btn-delete" onclick="deleteProduct3()">X</button>
+          </div>
+        </div>
+        <div class="items" id="product-delete_4">
+          <div class="items-img">
+            <img src="./images/product-us-1.jpg" width="100%">
+          </div>
+          <div class="items-name">
+            <span>Make is <br> Easy</span>
+          </div>
+          <div class="items-number">
+            <input type="number" style="width: 80px;" value="5" readonly>
+          </div>
+          <div class="items-delete">
+            <button class="btn-delete" onclick="deleteProduct4()">X</button>
+          </div>
+        </div>
+        <div class="items" id="product-delete_5">
+          <div class="items-img">
+            <img src="./images/product-us-1.jpg" width="100%">
+          </div>
+          <div class="items-name">
+            <span>Make is <br> Easy</span>
+          </div>
+          <div class="items-number">
+            <input type="number" style="width: 80px;" value="5" readonly>
+          </div>
+          <div class="items-delete">
+            <button class="btn-delete" onclick="deleteProduct5()">X</button>
+          </div>
+        </div>
+        <div class="items" id="product-delete_6">
+          <div class="items-img">
+            <img src="./images/product-us-1.jpg" width="100%">
+          </div>
+          <div class="items-name">
+            <span>Make is <br> Easy</span>
+          </div>
+          <div class="items-number">
+            <input type="number" style="width: 80px;" value="5" readonly>
+          </div>
+          <div class="items-delete">
+            <button class="btn-delete" onclick="deleteProduct6()">X</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- comment form  -->
     <div class="cmt-facebook m-3 text-center">
       <h2 class="header-comment m-5">Đánh giá sản phẩm từ người dùng</h2>
-      <div class="fb-comments" data-href="http://127.0.0.1:5500/product-items.html" data-width="400" data-numposts="100"></div>
+      <div class="fb-comments" data-href="http://127.0.0.1:5500/product-items.html" data-width="400"
+        data-numposts="100"></div>
     </div>
     <!-- end comment form  -->
     <!-- end content  -->
@@ -200,7 +301,7 @@
               </div>
               <div class="mb-3 text-left">
                 <h5>Yêu cầu cho shipper</h5>
-                <textarea name="wish" id="wish" cols="30" rows="5"></textarea>
+                <textarea name="wish" id="wish" style="width: 100%; height: max-content;"></textarea>
               </div>
             </form>
             <div id="info-error" class="text-center" style="color: red; font-size:12px;"></div><br>
@@ -212,18 +313,21 @@
         </div>
       </div>
     </div>
+    <!-- end modal  -->
+
     <div class="position-price">
-      <input type="button" value="Giỏ Hàng" class="btn">
+      <button class="btn m-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions">Giỏ Hàng</button>
       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
         data-bs-whatever="@mdo">Mua Ngay</button>
     </div>
-    <!-- end modal  -->
+
     <!-- product recommend -->
     <div id="product-1" class="container-product m-3">
       <div class="header-product">
         <h4 class="text-center p-1" style="color: red;">
           <i class="fa-brands fa-hotjar"></i>
-          Có thể bạn sẽ thích
+          Sản Phẩm HOT
           <i class="fa-brands fa-hotjar"></i>
         </h4>
         <div class="product m-3">
@@ -246,7 +350,7 @@
               <h5>Tinh Thần Bền Bỉ</h5>
               <span>Rèn luyện 1 tinh thần thép ngay....</span><br>
               <span class="price-items">197.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>250.000đ</del><br>
-              <button class="btn">Mua Ngay</button>
+              <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
             </div>
           </div>
           <div class="product-items">
@@ -260,8 +364,6 @@
             </div>
             <div class="card-top">
               <a href="./product-items.html">
-                <a href="./product-items.html">
-                </a>
                 <img src="./images/product_type1_2.jpg" width="70%">
               </a>
             </div>
@@ -269,7 +371,7 @@
               <h5>Hiệu ứng Lucifer</h5>
               <span>Rất nhiều điều thú vị đang chờ bạn.</span><br>
               <span class="price-items">423.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>500.000đ</del><br>
-              <button class="btn">Mua Ngay</button>
+              <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
             </div>
           </div>
           <div class="product-items">
@@ -291,7 +393,7 @@
               <h5>Tâm Lý Học Tính Cách</h5>
               <span>Tìm hiểu rõ nét nhất về tâm lý....</span><br>
               <span class="price-items">291.999đ</span><br>
-              <button class="btn">Mua Ngay</button>
+              <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
             </div>
           </div>
           <div class="product-items">
@@ -311,16 +413,15 @@
               <h5>Toàn Thư Tâm Lý Học</h5>
               <span>Tâm lý luôn là thứ khó kiểm soát nhất</span><br>
               <span class="price-items">59.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp;<del>100.000đ</del><br>
-              <button class="btn">Mua Ngay</button>
+              <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
             </div>
           </div>
         </div>
         <div class="next-product text-center m-1">
-          <a href="#">Xem Thêm ></a>
+          <a href="./list-product.html" class="btn">Xem Thêm</a>
         </div>
       </div>
     </div>
-
     <!-- end product recommend  -->
     <!-- end content  -->
     <!-- footer -->

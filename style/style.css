@@ -30,6 +30,9 @@ body{
     border: 3px solid red !important;
     color: red;
 }
+.display-none_product{
+    display: none !important;
+}
 /* Header */
 .container-padding{
     padding: 0px !important;
@@ -97,6 +100,9 @@ body{
 .info-account_top{
     position: relative;
     border-bottom: 1px solid black;
+}
+.info-account_bot{
+    cursor: pointer;
 }
 .info-account_top:hover,
 .info-account_bot:hover{
@@ -246,15 +252,9 @@ textarea{
     margin-top:auto ;
     margin-bottom: 5px;
 }
-/* .product-items{
-    position: relative;
+.card-button a{
+    margin: 5px;
 }
-.card-button{
-    position: absolute;
-    bottom: 5px;
-    right: 50%;
-    transform: translateX(50%);
-} */
 .card-top{
     box-sizing: border-box;
     margin-top: 20px !important;
@@ -269,6 +269,7 @@ textarea{
     color: red;
     font-size: 20px;
 }
+
 .card-top,
 .card-bot{
     flex: 1 1 100%;
@@ -542,4 +543,45 @@ textarea{
 }
 .mobile-tablet_only{
     display: none;
+}
+.items{
+    background-color: white;
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.items .items-img{
+    flex: 1 1 25%;
+}
+.items .items-name{
+    flex: 1 1 25%;
+}
+.items.items-number{
+    flex: 1 1 25%;
+}
+.items .items-delete{
+    flex: 1 1 25%;
+}
+.btn-delete{
+    width: 50%;
+    border: 0px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    padding: 2px;
+}
+.btn-delete:hover{
+    background-color: aqua;
+}
+.offcanvas-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.offcanvas-bg{
+    background-color: aquamarine !important;
 }

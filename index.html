@@ -53,7 +53,7 @@
                 <a class="nav-link" aria-current="page" href="#product-1">Sản Phẩm Hot</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#product-3">Sản Phẩm Nước Ngoài</a>
+                <a class="nav-link" aria-current="page" href="#product-3_modal">Sản Phẩm Nước Ngoài</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -62,9 +62,9 @@
                   <i class="fa-solid fa-sort-down"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#product-2">Manga/Anime</a></li>
-                  <li><a class="dropdown-item" href="#nav-china-tab">Giỏ Hàng</a></li>
-                  <li><a class="dropdown-item" href="#nav-cs-tab">Kho Mã Giảm Giá</a></li>
+                  <li><a class="dropdown-item" href="./list-product.html">Sản phẩm ưa chuộng</a></li>
+                  <li title="Đăng nhập để sử dụng chức năng"><a class="dropdown-item disabled" href="#">Giỏ Hàng</a></li>
+                  <li title="Đăng nhập để sử dụng chức năng"><a class="dropdown-item disabled" href="#">Kho Mã Giảm Giá</a></li>
                 </ul>
               </li>
               <li class="nav-pc_none nav-item">
@@ -74,11 +74,11 @@
                 <a class="nav-link" aria-current="page" href="./sign-up.html">Đăng Ký</a>
               </li>
             </ul>
-            <form class="search d-flex" role="search">
-              <input class="search-input form-control me-2" id="search-google" type="search" placeholder="Tìm Light Novel "
+            <form class="search d-flex">
+              <input class="search-input form-control me-2" type="search" id="search" placeholder="Tìm Light Novel "
                 aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">
-                  <img src="./images/search.png" width="25px" />
+              <button type="button" class="btn">
+                <img src="./images/search.png" width="25px" onclick="searchProduct()">
               </button>
             </form>
           </div>
@@ -204,6 +204,8 @@
             <div class="card-bot">
               <h5>Tinh Thần Bền Bỉ</h5>
               <span>Rèn luyện 1 tinh thần thép ngay....</span><br>
+            </div>
+            <div class="card-button">
               <span class="price-items">197.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>250.000đ</del><br>
               <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
             </div>
@@ -225,6 +227,8 @@
             <div class="card-bot">
               <h5>Hiệu ứng Lucifer</h5>
               <span>Rất nhiều điều thú vị đang chờ bạn.</span><br>
+            </div>
+            <div class="card-button">
               <span class="price-items">423.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>500.000đ</del><br>
               <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
             </div>
@@ -247,6 +251,8 @@
             <div class="card-bot">
               <h5>Tâm Lý Học Tính Cách</h5>
               <span>Tìm hiểu rõ nét nhất về tâm lý....</span><br>
+            </div>
+            <div class="card-button">
               <span class="price-items">291.999đ</span><br>
               <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
             </div>
@@ -267,6 +273,8 @@
             <div class="card-bot">
               <h5>Toàn Thư Tâm Lý Học</h5>
               <span>Tâm lý luôn là thứ khó kiểm soát nhất</span><br>
+            </div>
+            <div class="card-button">
               <span class="price-items">59.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp;<del>100.000đ</del><br>
               <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
             </div>
@@ -303,6 +311,8 @@
             <div class="card-bot">
               <h5>Monster #8 - Tập 6</h5>
               <span>Kafka rơi vào tình thế hiểm nghèo vì những chuyện..</span><br>
+            </div>
+            <div class="card-button">
               <span class="price-items">200.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>250.000đ</del><br>
               <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
             </div>
@@ -325,6 +335,8 @@
             <div class="card-bot">
               <h5>Classroom of the Elite #4</h5>
               <span>Chào Mừng Đến Lớp Học Đề Cao Thực Lực..</span><br>
+            </div>
+            <div class="card-button">
               <span class="price-items">225.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>500.000đ</del><br>
               <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
             </div>
@@ -347,6 +359,8 @@
             <div class="card-bot">
               <h5>Chainsaw Man - Tập 1</h5>
               <span>Câu chuyện của CHAINSAW MAN mô tả một thế giới nơi ma quỷ và ...</span><br>
+            </div>
+            <div class="card-button">
               <span class="price-items">91.999đ</span><br>
               <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
             </div>
@@ -366,6 +380,8 @@
             <div class="card-bot">
               <h5>Dragon Ball #6 Full Color</h5>
               <span>Cùng Son GoHan và những người bạn tiêu diệt Sên Bọ Hung ...</span><br>
+            </div>
+            <div class="card-button">
               <span class="price-items">123.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp;<del>100.000đ</del><br>
               <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
             </div>
@@ -422,6 +438,8 @@
                   <div class="card-bot">
                     <h5>Make it easy</h5>
                     <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -444,6 +462,8 @@
                   <div class="card-bot">
                     <h5>Little Stories </h5>
                     <span>Sản phẩm có nguồn gốc từ Mỹ</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">224.000đ</span><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -466,6 +486,8 @@
                   <div class="card-bot">
                     <h5>Super Starters</h5>
                     <span>Sản phẩm có nguồn gốc từ Mỹ</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">91.999đ</span><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -485,6 +507,8 @@
                   <div class="card-bot">
                     <h5>ABC FOR KID #1</h5>
                     <span>Sản phẩm có nguồn gốc từ Mỹ</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">223.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp;<del>244.000đ</del><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -513,6 +537,8 @@
                   <div class="card-bot">
                     <h5>YCT Level 1</h5>
                     <span>Sách chuẩn tiếng Hoa được nhập từ Trung Quốc</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">111.999đ</span><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -535,6 +561,8 @@
                   <div class="card-bot">
                     <h5>Đàm Thoại Tiếng Hoa</h5>
                     <span>Cùng học cách những người Hoa đàm thoại qua lại....</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">300.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>500.000đ</del><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -557,6 +585,8 @@
                   <div class="card-bot">
                     <h5>Tân Giáo Trình Hán Ngữ</h5>
                     <span>Sách mới về kho, đã được cập nhật rất nhiều giáo trình...</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">591.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>700.000đ</del><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -576,6 +606,8 @@
                   <div class="card-bot">
                     <h5>Giáo Trình Hán Ngữ BOYA</h5>
                     <span>Giáo trình dành cho những người đã học qua...</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">623.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp;<del>1.000.000đ</del><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -604,6 +636,8 @@
                   <div class="card-bot">
                     <h5>Tự Học Tiếng Nhật</h5>
                     <span>Trong 30 giờ bạn sẽ học được những điều gì ?</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">602.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>850.000đ</del><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -625,6 +659,8 @@
                   <div class="card-bot">
                     <h5>Tiếng Nhật Không Khó</h5>
                     <span>Ai cũng bảo tiếng nhật khó quá, làm sao mà học được</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">925.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>1.500.000đ</del><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -646,6 +682,8 @@
                   <div class="card-bot">
                     <h5>Mô Phỏng Đề Thi HSK</h5>
                     <span>Cùng bạn bè mình luyện thi tiếng nhật chuẩn quốc tế nào.</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">491.999đ</span>&nbsp;&nbsp;&nbsp;&nbsp; <del>500.000đ</del><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -665,6 +703,8 @@
                   <div class="card-bot">
                     <h5>Tự Học Tiếng Nhật</h5>
                     <span>10 phút thì bạn làm được những gì. Mau học ngay thôi</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">756.999đ</span><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -695,6 +735,8 @@
                   <div class="card-bot">
                     <h5>Sword Art Online 019</h5>
                     <span>Sản phẩm có chữ ký của tác giả Reki Kawahara</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">427.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>520.000đ</del><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -714,6 +756,8 @@
                   <div class="card-bot">
                     <h5>Classroom of the Elite #8</h5>
                     <span>Sản Phẩm chuẩn nguyên tác tiếng nhật, có màu</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">229.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>400.000đ</del><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -735,6 +779,8 @@
                   <div class="card-bot">
                     <h5>Conan Detetive with Ran</h5>
                     <span>ArtBook về Ran và Shinichi được nhập khẩu từ Nhật Bản</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">391.999đ</span><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -756,6 +802,8 @@
                   <div class="card-bot">
                     <h5>Trừ Tà - Tập 2</h5>
                     <span>Tập 2 đã lên kệ, cùng sắm ngay 1 quyển để khám phá tiếp nào</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">223.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp;<del>421.000đ</del><br>
                     <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
                   </div>
@@ -785,6 +833,8 @@
                   <div class="card-bot">
                     <h5>Bán Tình Đinh Mặc</h5>
                     <span>Dự kiến: 1/2023</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">457.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>534.000đ</del><br>
                     <button class="btn-pre_order">Đặt trước</button>
                   </div>
@@ -805,6 +855,8 @@
                   <div class="card-bot">
                     <h5>Thuật Thao Túng</h5>
                     <span>Dự kiến: 12/2022</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">225.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>420.000đ</del><br>
                     <button class="btn-pre_order">Đặt trước</button>
                   </div>
@@ -825,6 +877,8 @@
                   <div class="card-bot">
                     <h5>Chiến tranh tiền tệ - Phần 2</h5>
                     <span>Dự kiến: 12/2022</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">298.999đ</span><br>
                     <button class="btn-pre_order">Đặt trước</button>
                   </div>
@@ -845,6 +899,8 @@
                   <div class="card-bot">
                     <h5>Khéo Ăn Nói</h5>
                     <span>Tạm không nhập hàng</span><br>
+                  </div>
+                  <div class="card-button">
                     <span class="price-items">Liên Hệ</span><br>
                     <button class="btn-pre_order">Không bán</button>
                   </div>
@@ -860,52 +916,7 @@
       </div>
     </div>
     <!-- end product 3 -->
-
-    <!-- modal  -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content bg-color">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Tin Khách Hàng</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="name" placeholder="Họ và Tên.">
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="phone" placeholder="Số điện thoại">
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" id="email-order" placeholder="Email">
-              </div>
-              <div class="mb-3 text-left">
-                <h5>Đơn vị giao hàng (bạn mong muốn)</h5>
-                <p style="font-size: 12px; color:red;">Chúng tôi sẽ bàn giao cho 1 trong các đơn vị mà bạn đã chọn</p>
-                <input type="checkbox" id="list-check-1" name="check" class="m-2" checked>
-                <label for="list-check-1">GHN</label>
-                <input type="checkbox" id="list-check-2" name="check" class="m-2">
-                <label for="list-check-2">NinjaVan</label>
-                <input type="checkbox" id="list-check-3" name="check" class="m-2">
-                <label for="list-check-3">GHTK</label>
-              </div>
-              <div class="mb-3 text-left">
-                <h5>Yêu cầu cho shipper</h5>
-                <textarea name="wish" id="wish" cols="30" rows="5"></textarea>
-              </div>
-            </form>
-            <div id="info-error" class="text-center" style="color: red; font-size:12px;"></div><br>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn" data-bs-dismiss="modal">Đóng</button>
-            <button type="submit" class="btn" onclick="submitOrder()">Đặt Hàng</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end modal  -->
-
+    
     <!-- contact -->
     <div class="contact">
       <div class="contact-left">
@@ -918,7 +929,7 @@
       <div class="contact-right">
         <form>
           <input type="email" placeholder="Nhập địa chỉ email của bạn" autocomplete="email" id="email">
-          <input class="input-submit" type="submit" id="btn-email" onclick="checkEmail()">
+          <input class="input-submit" type="button" value="Gửi" id="btn-email" onclick="checkEmail()">
         </form>
       </div>
     </div>
@@ -944,9 +955,9 @@
         <div class="footer-right_top">
           <span> Thông tin liên lạc: </span><br>
           <i class="fa-solid fa-phone"></i>
-          <span>Tư Vấn miễn phí ngay: <b>1800. 8088</b> Bấm phím 1 (cước phí 1000đ/1 phút)</span><br>
+          <span>Tư Vấn miễn phí ngay: <a href="tel:0387737544"><b>1800.8088</b></a> Bấm phím 1 (cước phí 1000đ/1 phút)</span><br>
           <i class="fa-solid fa-envelope"></i>
-          <span>Tư Vấn qua email: <b>bienphat01422@gmail.com</b> (Trả lời trong vòng vài giờ)</span>
+          <span>Tư Vấn qua email:<b>bienphat01422@gmail.com</b> (Trả lời trong vòng vài giờ)</span>
           <hr>
         </div>
         <div class="footer-right_bot">

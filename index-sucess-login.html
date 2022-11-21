@@ -63,8 +63,9 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#product-2">Manga/Anime</a></li>
-                  <li><a class="dropdown-item" href="#nav-china-tab">Giỏ Hàng</a></li>
-                  <li><a class="dropdown-item" href="#nav-cs-tab">Kho Mã Giảm Giá</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" 
+                    aria-controls="offcanvasWithBothOptions">Giỏ Hàng</a></li>
+                  <li><a class="dropdown-item" href="#contact">Kho Mã Giảm Giá</a></li>
                 </ul>
               </li>
               <li class="nav-pc_none nav-item">
@@ -81,10 +82,10 @@
               </li>
             </ul>
             <form class="search d-flex" role="search">
-              <input class="search-input form-control me-2" type="search" placeholder="Tìm Light Novel "
+              <input class="search-input form-control me-2" type="search" id="search" placeholder="Tìm Light Novel "
                 aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">
-                <img src="./images/search.png" width="25px" />
+              <button type="button" class="btn">
+                  <img src="./images/search.png" width="25px" onclick="searchProduct()">
               </button>
             </form>
           </div>
@@ -106,12 +107,13 @@
           </div>
         </div>
         <div class="info-account_bot" title="Đăng Ký">
-          <a href="./breakpoint.html">
+          <a class="dropdown-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" 
+          aria-controls="offcanvasWithBothOptions">
             <i class="fa-solid fa-cart-shopping" style="font-size: 35px; padding: 5px; color: aqua;"></i><br />
           </a>
           <div class="position-sign-in">
-            <span>Giỏ đồ hiện tại đang rỗng</span>
-            <span>Sản Phẩm: 0</span>
+            <span>Giỏ đồ hiện tại</span><br>
+            <span>Sản phẩm: 0</span>
           </div>
         </div>
       </div>
@@ -937,8 +939,105 @@
     </div>
     <!-- end modal  -->
 
+    <div class="offcanvas offcanvas-start offcanvas-bg" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-center border-bottom p-1" id="offcanvasWithBothOptionsLabel">
+          <img src="./images/shopping-icon.webp" width="10%" style="display: inline-block;">
+          Giỏ Hàng của bạn
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body offcanvas-display">
+        <div class="items" id="product-delete_1">
+          <div class="items-img">
+            <img src="./images/product-cn-1.jpg" width="100%">
+          </div>
+          <div class="items-name">
+            <span>YTC</span>
+          </div>
+          <div class="items-number">
+            <input type="number" style="width: 80px;" value="1" readonly>
+          </div>
+          <div class="items-delete">
+            <button class="btn-delete" onclick="deleteProduct1()">X</button>
+          </div>
+        </div>
+        <div class="items" id="product-delete_2">
+          <div class="items-img">
+            <img src="./images/product-jp-4.jpg" width="100%">
+          </div>
+          <div class="items-name">
+            <span>10 Phút tự học tiếng nhật</span>
+          </div>
+          <div class="items-number">
+            <input type="number" style="width: 80px;" value="10" readonly>
+          </div>
+          <div class="items-delete">
+            <button class="btn-delete" onclick="deleteProduct2()">X</button>
+          </div>
+        </div>
+        <div class="items" id="product-delete_3">
+          <div class="items-img">
+            <img src="./images/product-us-1.jpg" width="100%">
+          </div>
+          <div class="items-name">
+            <span>Make is <br> Easy</span>
+          </div>
+          <div class="items-number">
+            <input type="number" style="width: 80px;" value="5" readonly>
+          </div>
+          <div class="items-delete">
+            <button class="btn-delete" onclick="deleteProduct3()">X</button>
+          </div>
+        </div>
+        <div class="items" id="product-delete_4">
+          <div class="items-img">
+            <img src="./images/product-us-1.jpg" width="100%">
+          </div>
+          <div class="items-name">
+            <span>Make is <br> Easy</span>
+          </div>
+          <div class="items-number">
+            <input type="number" style="width: 80px;" value="5" readonly>
+          </div>
+          <div class="items-delete">
+            <button class="btn-delete" onclick="deleteProduct4()">X</button>
+          </div>
+        </div>
+        <div class="items" id="product-delete_5">
+          <div class="items-img">
+            <img src="./images/product-us-1.jpg" width="100%">
+          </div>
+          <div class="items-name">
+            <span>Make is <br> Easy</span>
+          </div>
+          <div class="items-number">
+            <input type="number" style="width: 80px;" value="5" readonly>
+          </div>
+          <div class="items-delete">
+            <button class="btn-delete" onclick="deleteProduct5()">X</button>
+          </div>
+        </div>
+        <div class="items" id="product-delete_6">
+          <div class="items-img">
+            <img src="./images/product-us-1.jpg" width="100%">
+          </div>
+          <div class="items-name">
+            <span>Make is <br> Easy</span>
+          </div>
+          <div class="items-number">
+            <input type="number" style="width: 80px;" value="5" readonly>
+          </div>
+          <div class="items-delete">
+            <button class="btn-delete" onclick="deleteProduct6()">X</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- contact -->
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="contact-left">
         <h4 style="color: red;">
           <i class="fa-sharp fa-solid fa-envelope"></i>
@@ -949,7 +1048,7 @@
       <div class="contact-right">
         <form>
           <input type="email" placeholder="Nhập địa chỉ email của bạn" autocomplete="email" id="email">
-          <input class="input-submit" type="submit" id="btn-email" onclick="checkEmail()">
+          <input class="input-submit" type="button" id="btn-email" value="Gửi" onclick="checkEmail()">
         </form>
       </div>
     </div>

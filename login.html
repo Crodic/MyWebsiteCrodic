@@ -75,10 +75,10 @@
               </li>
             </ul>
             <form class="search d-flex" role="search">
-              <input class="search-input form-control me-2" type="search" placeholder="Tìm Light Novel "
+              <input class="search-input form-control me-2" type="search" id="search" placeholder="Tìm Light Novel "
                 aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">
-                <img src="./images/search.png" width="25px" />
+              <button type="button" class="btn">
+                <img src="./images/search.png" width="25px" onclick="searchProduct()">
               </button>
             </form>
           </div>
@@ -168,9 +168,9 @@
             <div class="form-content">
               <input type="password" placeholder="Mật Khẩu" class="input-check" id="password" onblur="removeLogin()">
             </div>
-            <div class="form-content" style="text-align: right;"> 
+            <div class="form-content" style="text-align: right; margin-right: 15px;"> 
               <input type="checkbox" id="save" value="yes" style="width: 5%;">
-              <label for="save" style="font-size: 13px;">Lưu mật khẩu</label>
+              <label for="save" style="font-size: 13px;">Save Info</label>
             </div>
             <div class="form-content">
               <div id="form-login"></div>

@@ -4,7 +4,10 @@ function checkEmail() {
     if (email != '' && email != null) {
         //Kiểm tra email đã đúng định dạng hay chưa
         if (email.match(checkEmail)) {
-            confirm("Email: " + email + " đã đăng ký nhận thông báo thành công. Đăng ký tài khoản ngay")
+            var okaySignin = confirm("Email: " + email + " đã đăng ký nhận thông báo thành công. Đăng ký tài khoản ngay")
+            if(okaySignin==true){
+                window.location.href="./sign-up.html"
+            }
         }
     } else {
         alert("Email không hợp lệ vui lòng thử lại.")
@@ -14,6 +17,7 @@ function submitOrder() {
     var name = document.getElementById("name").value
     var phone = document.getElementById("phone").value
     var emailOrder = document.getElementById("email-order").value
+    var numberOrder = document.getElementById("number").value
     var order = document.getElementById("wish").value
     var error = document.getElementById("info-error")
     var checkEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -21,12 +25,11 @@ function submitOrder() {
         if (isNaN(phone) == false && phone != '' && phone != null && phone.length >= 10) {
             if (emailOrder != '' && emailOrder != null) {
                 if (emailOrder.match(checkEmail)) {
-                    var orderCheck = prompt("Xác nhận lại số lượng mua hàng (Đây là kết quả cuối cùng)")
-                    if(orderCheck!='' && orderCheck>0 && orderCheck<100){
+                    if(numberOrder!='' && numberOrder>0 && numberOrder<100){
                         var check = confirm("Tên Khách Hàng: "+name
                         +" \n Số điện thoại: "+phone
                         +" \n Email: "+emailOrder
-                        +" \n Số lượng: "+orderCheck
+                        +" \n Số lượng: "+numberOrder
                         +" \n Yêu cầu: "+order
                         +" \n Nhấn OK để xác nhận thông tin")
                         if(check==true){
@@ -166,5 +169,35 @@ function removeLogin() {
     }
     if (pass.length != null && pass.length > 6) {
         document.getElementById('password').classList.remove('error')
+    }
+}
+function deleteProduct1(){
+    var product1 = document.getElementById("product-delete_1")
+    product1.classList.add('display-none_product')
+}
+function deleteProduct2(){
+    var product1 = document.getElementById("product-delete_2")
+    product1.classList.add('display-none_product')
+}
+function deleteProduct3(){
+    var product1 = document.getElementById("product-delete_3")
+    product1.classList.add('display-none_product')
+}
+function deleteProduct4(){
+    var product1 = document.getElementById("product-delete_4")
+    product1.classList.add('display-none_product')
+}
+function deleteProduct5(){
+    var product1 = document.getElementById("product-delete_5")
+    product1.classList.add('display-none_product')
+}
+function deleteProduct6(){
+    var product1 = document.getElementById("product-delete_6")
+    product1.classList.add('display-none_product')
+}
+function searchProduct(){
+    var searchItems= document.getElementById("search").value
+    if(searchItems != 0){
+        window.location.href="./product-items.html"
     }
 }
