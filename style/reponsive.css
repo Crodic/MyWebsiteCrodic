@@ -105,6 +105,9 @@
     .product .product-items{
         flex: 1 1 40%;
     }
+    #list-product_pc{
+        display: none;
+    }
     .mobile-tablet_only{
         display: block;
     }
@@ -114,5 +117,9 @@
     }
     .content-list_left{
         background-color: aliceblue;
+    }
+    .product{
+        flex: 1 1 50%;
+        flex-wrap: wrap;
     }
 }
