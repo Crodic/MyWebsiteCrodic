@@ -146,18 +146,25 @@ function login() {
     var accountName = document.getElementById('account-name').value
     var pass = document.getElementById('password').value
     var formLogin = document.getElementById('form-login')
-
-    if (accountName.length == 0 || pass.length == 0) {
+    if (accountName.length != 0 || pass.length != 0){
+        if (accountName == 'crodic01422' && pass == 'phat4567') {
+            document.getElementById("account-name").classList.remove('error')
+            document.getElementById("password").classList.remove('error')
+            formLogin.innerHTML = " "
+            window.location.href = "./index-sucess-login.html"
+        }else{
+            document.getElementById("account-name").classList.add('error')
+            document.getElementById("password").classList.add('error')
+            formLogin.innerHTML = " !!Tên đăng nhập hoặc mật khẩu không chính xác"
+            formLogin.style.color = "red"
+            formLogin.style.fontSize = "12px"
+        }
+    } else {
         document.getElementById("account-name").classList.add('error')
         document.getElementById("password").classList.add('error')
-        formLogin.innerHTML = " !!Tên đăng nhập hoặc mật khẩu không chính xác"
+        formLogin.innerHTML = " Bạn chưa nhập tên đăng nhập hoặc mật khẩu "
         formLogin.style.color = "red"
         formLogin.style.fontSize = "12px"
-    } else {
-        document.getElementById("account-name").classList.remove('error')
-        document.getElementById("password").classList.remove('error')
-        formLogin.innerHTML = " "
-        window.location.href = "./index-sucess-login.html"
     }
 }
 function removeLogin() {

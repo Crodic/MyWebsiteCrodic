@@ -18,7 +18,7 @@
   <title>STU Light Novel | Đăng Nhập</title>
 </head>
 
-<body onload="onLoad()">
+<body>
   <div class="back">
     <a href="#top">
       <div class="back-to_top">
@@ -158,11 +158,534 @@
       </div>
     </div>
     <!-- end banner -->
-    <div class="content-cart m-3  text-center">
-      <div class="loading" id="loading">
-        <img src="./images/loading2.gif">
+    <div class="content-cart m-3 text-center">
+      <div id="product-3_modal" class="container-product m-3">
+        <!-- <div class="loading" id="loading">
+          <img src="./images/loading.gif">
+        </div> -->
+        <div class="header-product text-center">
+          <div class="loading" id="loading">
+            <img src="./images/loading.gif">
+          </div>
+          <h5 class="header-color text-center p-1">
+            <i class="fa-solid fa-earth-americas"></i>
+            Sản Phẩm Nước Ngoài
+            <i class="fa-solid fa-earth-americas"></i>
+          </h5>
+          <!-- bootstrap-->
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-us-tab" data-bs-toggle="tab" data-bs-target="#nav-us" type="button"
+                role="tab" aria-controls="nav-us" aria-selected="true" onclick="onLoad()">Mỹ</button>
+              <button class="nav-link" id="nav-china-tab" data-bs-toggle="tab" data-bs-target="#nav-china" type="button"
+                role="tab" aria-controls="nav-china" aria-selected="false" onclick="onLoad()">Trung Quốc</button>
+              <button class="nav-link" id="nav-jp-tab" data-bs-toggle="tab" data-bs-target="#nav-jp" type="button"
+                role="tab" aria-controls="nav-jp" aria-selected="false" onclick="onLoad()">Nhật Bản</button>
+              <button class="nav-link" id="nav-ln-tab" data-bs-toggle="tab" data-bs-target="#nav-ln" type="button"
+                role="tab" aria-controls="nav-ln" aria-selected="false"
+                title="Những sản phẩm chuẩn nguyên tác không qua dịch thuật" onclick="onLoad()">Light Novel Nguyên Tác</button>
+              <button class="nav-link" id="nav-cs-tab" data-bs-toggle="tab" data-bs-target="#nav-cs" type="button"
+                role="tab" aria-controls="nav-cs" aria-selected="false"
+                title="Những sản phẩm chuẩn nguyên tác không qua dịch thuật" onclick="onLoad()">Đặt trước</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-us" role="tabpanel" aria-labelledby="nav-us-tab" tabindex="0">
+              <div class="container-product m-3">
+                <div class="product m-3">
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-us-1.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Make it easy</h5>
+                      <span>Sản phẩm có nguồn gốc từ mỹ</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">500.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>650.000đ</del><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-us-2.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Little Stories </h5>
+                      <span>Sản phẩm có nguồn gốc từ Mỹ</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">224.000đ</span><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-us-3.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Super Starters</h5>
+                      <span>Sản phẩm có nguồn gốc từ Mỹ</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">91.999đ</span><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-us-4.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>ABC FOR KID #1</h5>
+                      <span>Sản phẩm có nguồn gốc từ Mỹ</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">223.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp;<del>244.000đ</del><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="next-product text-center m-1">
+                  <a href="./list-product.html" class="btn">Xem Thêm</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-china" role="tabpanel" aria-labelledby="nav-china-tab" tabindex="0">
+              <div class="container-product m-3">
+                <div class="product m-3">
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-cn-1.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>YCT Level 1</h5>
+                      <span>Sách chuẩn tiếng Hoa được nhập từ Trung Quốc</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">111.999đ</span><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-cn-2.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Đàm Thoại Tiếng Hoa</h5>
+                      <span>Cùng học cách những người Hoa đàm thoại qua lại....</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">300.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>500.000đ</del><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-cn-3.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Tân Giáo Trình Hán Ngữ</h5>
+                      <span>Sách mới về kho, đã được cập nhật rất nhiều giáo trình...</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">591.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>700.000đ</del><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-cn-4.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Giáo Trình Hán Ngữ BOYA</h5>
+                      <span>Giáo trình dành cho những người đã học qua...</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">623.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp;<del>1.000.000đ</del><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="next-product text-center m-1">
+                  <a href="./list-product.html" class="btn">Xem Thêm</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-jp" role="tabpanel" aria-labelledby="nav-jp-tab" tabindex="0">
+              <div class="container-product m-3">
+                <div class="product m-3">
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-jp-1.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Tự Học Tiếng Nhật</h5>
+                      <span>Trong 30 giờ bạn sẽ học được những điều gì ?</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">602.000đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>850.000đ</del><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-jp-2.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Tiếng Nhật Không Khó</h5>
+                      <span>Ai cũng bảo tiếng nhật khó quá, làm sao mà học được</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">925.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>1.500.000đ</del><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-jp-3.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Mô Phỏng Đề Thi HSK</h5>
+                      <span>Cùng bạn bè mình luyện thi tiếng nhật chuẩn quốc tế nào.</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">491.999đ</span>&nbsp;&nbsp;&nbsp;&nbsp; <del>500.000đ</del><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-jp-4.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Tự Học Tiếng Nhật</h5>
+                      <span>10 phút thì bạn làm được những gì. Mau học ngay thôi</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">756.999đ</span><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="next-product text-center m-1">
+                  <a href="./list-product.html" class="btn">Xem Thêm</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-ln" role="tabpanel" aria-labelledby="nav-ln-tab" tabindex="0">
+              <div class="container-product m-3">
+                <div class="product m-3">
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-ln-1.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Sword Art Online 019</h5>
+                      <span>Sản phẩm có chữ ký của tác giả Reki Kawahara</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">427.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>520.000đ</del><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-ln-2.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Classroom of the Elite #8</h5>
+                      <span>Sản Phẩm chuẩn nguyên tác tiếng nhật, có màu</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">229.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>400.000đ</del><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-ln-3.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Conan Detetive with Ran</h5>
+                      <span>ArtBook về Ran và Shinichi được nhập khẩu từ Nhật Bản</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">391.999đ</span><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star" style="color: yellow;"></i>
+                        <i class="fa-solid fa-star-half" style="color: yellow;"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-ln-4.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Trừ Tà - Tập 2</h5>
+                      <span>Tập 2 đã lên kệ, cùng sắm ngay 1 quyển để khám phá tiếp nào</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">223.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp;<del>421.000đ</del><br>
+                      <a href="./product-items.html" class="btn">Chi tiết sản phẩm</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="next-product text-center m-1">
+                  <a href="./list-product.html" class="btn">Xem Thêm</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-cs" role="tabpanel" aria-labelledby="nav-cs-tab" tabindex="0">
+              <div class="container-product m-3">
+                <div class="product m-3">
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span style="color: red; font-weight: bold">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Hết Hàng
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-cs-1.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Bán Tình Đinh Mặc</h5>
+                      <span>Dự kiến: 1/2023</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">457.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>534.000đ</del><br>
+                      <button class="btn-pre_order">Đặt trước</button>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span style="color: red; font-weight: bold">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Hết Hàng
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-cs-2.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Thuật Thao Túng</h5>
+                      <span>Dự kiến: 12/2022</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">225.999đ</span> &nbsp;&nbsp;&nbsp;&nbsp; <del>420.000đ</del><br>
+                      <button class="btn-pre_order">Đặt trước</button>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span style="color: red; font-weight: bold">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Hết Hàng
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-cs-3.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Chiến tranh tiền tệ - Phần 2</h5>
+                      <span>Dự kiến: 12/2022</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">298.999đ</span><br>
+                      <button class="btn-pre_order">Đặt trước</button>
+                    </div>
+                  </div>
+                  <div class="product-items">
+                    <div class="card-position">
+                      <span style="color: red; font-weight: bold">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Hết Hàng
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                      </span>
+                    </div>
+                    <div class="card-top">
+                      <a href="./product-items.html">
+                        <img src="./images/product-cs-4.jpg" width="70%">
+                      </a>
+                    </div>
+                    <div class="card-bot">
+                      <h5>Khéo Ăn Nói</h5>
+                      <span>Tạm không nhập hàng</span><br>
+                    </div>
+                    <div class="card-button">
+                      <span class="price-items">Liên Hệ</span><br>
+                      <button class="btn-pre_order">Không bán</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="next-product text-center m-1">
+                  <a href="./list-product.html" class="btn">Xem Thêm ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end boostrap -->
+        </div>
       </div>
-      <div class="card-items_1">
+      <!-- <div class="card-items_1">
         <div class="card-img_1 text-center">
           <img src="./images/product-cn-2.jpg" width="50%">
         </div>
@@ -346,8 +869,8 @@
           <button type="button">Mua Ngay</button>
         </div>
       </div>
+    </div> -->
     </div>
-  
     <!-- footer -->
     <footer class="footer">
       <div class="footer-left">
@@ -420,7 +943,7 @@
 
   <!-- Bootstrap JS -->
   <script src="./javascript/test.js"></script>
-  <script src="./javascript/script.js"></script>
+  <!-- <script src="./javascript/script.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>

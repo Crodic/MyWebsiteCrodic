@@ -38,9 +38,15 @@
 // test("1","2",3,"okay","Crodic",8)
 
 function onLoad(){
-    var loading= document.getElementById("loading")
-    setTimeout(() =>{
-        loading.style.display="none"
+    var loading= document.getElementById("loading") //Lấy ID của div chứa hiệu ứng load
+    setTimeout(() =>{ //sử dụng hàm setTimeOut(lệnh thực hiện, timer)
+        loading.style.display="none" // thực hiện thêm class display none trước khi load 5000 mls
     },5000)
-    loading.style.display='flex'
+    loading.style.display='flex' // trong thời gian 5000mls thì display flex
+}
+function searchProduct(){
+    var searchItems= document.getElementById("search").value
+    if(searchItems != 0){
+        window.location.href="./loading.html"
+    }
 }

@@ -51,7 +51,9 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-
+.container-product{
+    position: relative;
+}
 .loading{
     display: none;
     justify-content: center;
@@ -62,9 +64,9 @@
     right: 50%;
     transform: translate(50%);
     z-index: 999;
-    background: rgba(80, 72, 72, 0.668);
+    background: rgba(108, 107, 107, 0.325);
+    border-radius: 10px;
 }
 .loading img{
-    width: 1263px;
-    height: 534px;
+    width: 100px;
 }
