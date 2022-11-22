@@ -33,6 +33,12 @@ body{
 .display-none_product{
     display: none !important;
 }
+.alert-notice{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100000;
+}
 /* Header */
 .container-padding{
     padding: 0px !important;
